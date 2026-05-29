@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "md-to-docx": {
+      "command": "node",
+      "args": [
+        "./mcp/mcp-md-to-docx/index.js"
+      ]
+    },
+    "mysql-db": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@benborla29/mcp-server-mysql"
+      ],
+      "env": {
+        "MYSQL_HOST": "localhost",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASS": "12345678",
+        "MYSQL_DB": "portal_db",
+        "ALLOW_SELECT_OPERATION": "true",
+        "ALLOW_INSERT_OPERATION": "true",
+        "ALLOW_UPDATE_OPERATION": "true",
+        "ALLOW_DELETE_OPERATION": "true",
+        "ALLOW_DDL_OPERATION": "true",
+        "ALLOW_DDL_OPERATIONS": "true",
+        "SCHEMA_DDL_PERMISSIONS": "portal_db:true,PORTAL_DB:true"
+      }
+    }
+  }
+}

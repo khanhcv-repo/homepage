@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Noto Sans JP", ui-sans-serif, system-ui;
+  --font-display: "Space Grotesk", "Noto Sans JP", sans-serif;
+  
+  --color-brand: #86ABA5;
+  --color-brand-light: #F2F6F5;
+  --color-brand-dark: #1E302D;
+  --color-brand-accent: #E07A5F; /* Cam đất/San hô tinh tế và hiện đại */
+  --color-brand-accent-bright: #FF6B4A; /* Cam rực rỡ làm highlight nút */
+  --color-brand-card: #86ABA5;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-slate-800 bg-[#F2F6F5] antialiased selection:bg-[#E07A5F] selection:text-white overflow-x-hidden;
+  }
+}
+
+/* Custom CSS Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #F2F6F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #86ABA5;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1E302D;
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #86ABA5 0%, #688C86 100%);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(134, 171, 165, 0.2);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+

@@ -1,0 +1,34 @@
+# TỔNG QUAN DỰ ÁN NEUROSHIN AI
+
+Tài liệu tóm tắt các thành phần chính của giao diện website NeuroShin AI (Thị trường Nhật Bản).
+
+---
+
+## 🎨 Nhận diện thương hiệu
+*   **Thương hiệu:** NeuroShin AI (Công nghệ Nhật Bản).
+*   **Màu chủ đạo:** Cam rực rỡ (`#FF5A36`).
+*   **Ngôn ngữ:** Tiếng Nhật 100%.
+
+---
+
+## 🏗️ Cấu trúc trang chủ (9 Khối chính)
+
+1.  **Thanh điều hướng (Navbar):** Menu nhảy nhanh đến các phần và nút "Dùng thử miễn phí".
+2.  **Màn hình chính (Hero):** 
+    - Lời chào và nút kêu gọi hành động.
+    - **Chatbot Demo:** Khách hàng có thể chat thử trực tiếp.
+    - **Dải Logo đối tác:** Logo thật của các tập đoàn lớn (Sony, Toyota, SoftBank...).
+3.  **Lĩnh vực AI (Services):** 6 mảng công nghệ (Chatbot, Phân tích dữ liệu, Hình ảnh...).
+4.  **Chỉ số (Stats):** 5 con số ấn tượng về quy mô và uy tín của công ty.
+5.  **Sản phẩm nổi bật (Products):** Giới thiệu chi tiết các phần mềm AI (ShinChat, DataShin...).
+6.  **Lợi thế (Why Us):** 6 lý do khách hàng nên chọn NeuroShin.
+7.  **Bảng giá (Pricing):** 3 gói dịch vụ (Starter, Business, Enterprise).
+8.  **Đánh giá & Tin tức:** Ý kiến khách hàng và các bài báo, nghiên cứu mới nhất.
+9.  **Đăng ký & Chân trang (Footer):** Form nhận tin và thông tin liên hệ trụ sở tại Tokyo.
+
+---
+
+## ✅ Yêu cầu cốt lõi
+*   **Logo đối tác:** Phải là logo thật, sắc nét (định dạng SVG).
+*   **Tương tác:** Chatbot phải phản hồi được các câu hỏi mẫu.
+*   **Di động:** Hiển thị đẹp trên cả điện thoại và máy tính.

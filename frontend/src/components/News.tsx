@@ -20,19 +20,19 @@ export default function News() {
   };
 
   return (
-    <section id="news" className="py-24 bg-[#F2F6F5]">
+    <section id="news" className="py-24 bg-[#FFFFFF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Title */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16" id="news-section-header">
           <div className="max-w-xl text-left">
-            <span className="text-sm font-bold tracking-widest text-[#FF5A36] uppercase font-mono mb-2 block animate-pulse">
+            <span className="text-sm font-bold tracking-widest text-[#35AFA3] uppercase font-mono mb-2 block animate-pulse">
               インサイト ＆ インテリジェンス
             </span>
             <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-slate-900 tracking-tight">
               研究・ニュースセンター
             </h2>
-            <div className="w-16 h-1 bg-[#FF5A36] mt-4 mb-2 rounded-full" />
+            <div className="w-16 h-1 bg-[#35AFA3] mt-4 mb-2 rounded-full" />
           </div>
           <p className="text-sm sm:text-base text-slate-600 mt-4 md:mt-0 max-w-md text-left md:text-right">
             NeuroShin の開発ラボから、最新のアカデミックな知識や画期的な独自のAI技術製品を常にお届けします。
@@ -48,7 +48,7 @@ export default function News() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: idx * 0.08 }}
-              className="rounded-3xl bg-white border border-[#86ABA5]/25 p-6 flex flex-col justify-between hover:shadow-xl hover:border-[#FF5A36]/30 transition-all duration-300 relative group text-left h-full"
+              className="rounded-3xl bg-[#FAFAFA] border border-[#25A69A]/25 p-6 flex flex-col justify-between hover:shadow-xl hover:border-[#35AFA3]/30 transition-all duration-300 relative group text-left h-full"
               id={`news-item-card-${news.id}`}
             >
               
@@ -65,22 +65,22 @@ export default function News() {
                 </div>
 
                 {/* News Title */}
-                <h3 className="font-display font-black text-slate-900 text-sm sm:text-base leading-snug group-hover:text-[#FF5A36] transition-colors duration-200 mb-6 line-clamp-3">
+                <h3 className="font-display font-black text-slate-900 text-sm sm:text-base leading-snug group-hover:text-[#35AFA3] transition-colors duration-200 mb-6 line-clamp-3">
                   {news.title}
                 </h3>
               </div>
 
               {/* Read button */}
-              <div className="pt-4 border-t border-[#86ABA5]/10 mt-auto flex items-center justify-between">
+              <div className="pt-4 border-t border-[#25A69A]/10 mt-auto flex items-center justify-between">
                 <span className="text-[10px] text-slate-400 font-mono flex items-center gap-0.5">
-                  <BookOpen className="h-3.5 w-3.5 text-[#86ABA5]" /> 読了時間：5分
+                  <BookOpen className="h-3.5 w-3.5 text-[#25A69A]" /> 読了時間：5分
                 </span>
                 <a
                   href={news.link}
-                  className="text-xs font-bold text-[#1E302D] group-hover:text-[#FF5A36] flex items-center gap-1 transition-colors duration-200"
+                  className="text-xs font-bold text-[#1F2937] group-hover:text-[#35AFA3] flex items-center gap-1 transition-colors duration-200"
                 >
                   詳細を見る
-                  <ArrowRight className="h-3.5 w-3.5 text-[#FF5A36] group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-3.5 w-3.5 text-[#35AFA3] group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
 

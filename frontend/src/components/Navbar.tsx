@@ -32,22 +32,22 @@ export default function Navbar() {
       id="main-nav"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#1E302D]/95 backdrop-blur-md shadow-lg py-3 border-b border-[#86ABA5]/20"
-          : "bg-transparent py-5"
+          ? "bg-white/95 backdrop-blur-md shadow-lg py-3 border-b border-[#25A69A]/20"
+          : "bg-white py-4 border-b border-slate-50"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group" id="nav-logo">
-            <div className="p-2.5 rounded-xl bg-gradient-to-tr from-[#FF5A36] to-[#FF6B4A] text-white shadow-md shadow-[#FF5A36]/20 group-hover:scale-110 transition-transform duration-300">
-              <Cpu className="h-6 w-6" />
+            <div className="p-3 rounded-xl bg-gradient-to-tr from-[#35AFA3] to-[#35AFA3] text-[#1F2937] shadow-md shadow-[#35AFA3]/20 group-hover:scale-110 transition-transform duration-300">
+              <Cpu className="h-7 w-7" />
             </div>
             <div className="flex flex-col">
-              <span className={`font-display text-xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-white" : "text-white"}`}>
+              <span className={`font-display text-2xl font-bold tracking-tight transition-colors duration-300 ${isScrolled ? "text-[#1F2937]" : "text-[#1F2937]"}`}>
                 {COMPANY_NAME}
               </span>
-              <span className="text-[10px] font-mono text-[#FF5A36] tracking-wider -mt-1 font-bold">
+              <span className="text-[11px] font-mono text-[#35AFA3] tracking-wider -mt-1 font-bold">
                 日本テクノロジー
               </span>
             </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
               <a
                 key={idx}
                 href={link.href}
-                className="text-sm font-medium text-slate-100 hover:text-[#FF5A36] transition-colors duration-200 relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[#FF5A36] hover:after:w-full after:transition-all after:duration-300"
+                className="text-sm font-medium text-[#1F2937] hover:text-[#35AFA3] transition-colors duration-200 relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[#35AFA3] hover:after:w-full after:transition-all after:duration-300"
               >
                 {link.name}
               </a>
@@ -70,7 +70,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4" id="nav-actions">
             <a
               href="#pricing"
-              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-[#FF5A36] hover:bg-[#FF6B4A] transition-all duration-300 hover:shadow-lg hover:shadow-[#FF5A36]/30 hover:-translate-y-0.5 flex items-center gap-1.5"
+              className="px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-[#35AFA3] hover:bg-[#35AFA3] transition-all duration-300 hover:shadow-lg hover:shadow-[#35AFA3]/30 hover:-translate-y-0.5 flex items-center gap-1.5"
             >
               無料で始める
               <ArrowRight className="h-4 w-4" />
@@ -81,7 +81,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center" id="mobile-toggle-container">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-xl text-slate-100 hover:text-white hover:bg-slate-800/50 focus:outline-none transition-all duration-200"
+              className="inline-flex items-center justify-center p-2 rounded-xl text-[#1F2937] hover:text-[#1F2937] hover:bg-slate-800/50 focus:outline-none transition-all duration-200"
               aria-expanded="false"
               id="mobile-menu-btn"
             >
@@ -100,7 +100,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-[#1E302D] border-b border-[#86ABA5]/20 overflow-hidden"
+            className="md:hidden bg-white border-b border-[#25A69A]/20 overflow-hidden"
             id="mobile-dropdown-menu"
           >
             <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3">
@@ -109,16 +109,16 @@ export default function Navbar() {
                   key={idx}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 rounded-xl text-base font-medium text-slate-200 hover:text-white hover:bg-[#86ABA5]/20 transition-all duration-200"
+                  className="block px-4 py-3 rounded-xl text-base font-medium text-[#1F2937] hover:text-[#1F2937] hover:bg-[#25A69A]/20 transition-all duration-200"
                 >
                   {link.name}
                 </a>
               ))}
-              <div className="pt-4 pb-2 px-4 border-t border-[#86ABA5]/10 flex flex-col gap-3">
+              <div className="pt-4 pb-2 px-4 border-t border-[#25A69A]/10 flex flex-col gap-3">
                 <a
                   href="#pricing"
                   onClick={() => setIsOpen(false)}
-                  className="w-full text-center py-3 px-4 rounded-xl text-sm font-semibold text-white bg-[#FF5A36] hover:bg-[#FF6B4A] transition-colors duration-200 shadow-md flex items-center justify-center gap-2"
+                  className="w-full text-center py-3 px-4 rounded-xl text-sm font-semibold text-white bg-[#35AFA3] hover:bg-[#35AFA3] transition-colors duration-200 shadow-md flex items-center justify-center gap-2"
                 >
                   無料で始める
                   <ArrowRight className="h-4 w-4" />

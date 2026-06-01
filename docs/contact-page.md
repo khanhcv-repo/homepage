@@ -3,7 +3,7 @@
 ## 1. Overview
 - **Page Name:** Contact Us (お問い合わせ)
 - **Objective:** Provide a professional and easy way for Japanese enterprises to reach out for inquiries, support, or free trial requests.
-- **Brand Consistency:** High-tech teal (`#1E302D`) and vibrant orange (`#FF5A36`).
+- **Brand Consistency:** Warm Sand (`#D5B895`) and Terracotta Orange (`#E85D22`).
 
 ## 2. Design Goals
 - **Trust:** Display clear contact information and office locations.

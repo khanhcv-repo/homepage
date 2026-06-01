@@ -21,25 +21,25 @@ export default function Newsletter() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white relative overflow-hidden">
+    <section id="contact" className="py-20 bg-[#E8F6F4] relative overflow-hidden">
       {/* Visual background element */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#86ABA5]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#25A69A]/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Container box with brand style */}
-        <div className="bg-[#1E302D] rounded-3xl p-8 sm:p-12 md:p-16 text-center border-2 border-[#86ABA5]/30 shadow-2xl relative overflow-hidden">
+        <div className="bg-[#1F2937] rounded-3xl p-8 sm:p-12 md:p-16 text-center border-2 border-[#25A69A]/30 shadow-2xl relative overflow-hidden">
           
           {/* Background Sage-Teal Circle lines */}
-          <div className="absolute -bottom-24 -left-24 w-64 h-64 rounded-full border border-[#86ABA5]/20 pointer-events-none" />
-          <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full border border-[#86ABA5]/20 pointer-events-none" />
+          <div className="absolute -bottom-24 -left-24 w-64 h-64 rounded-full border border-[#25A69A]/20 pointer-events-none" />
+          <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full border border-[#25A69A]/20 pointer-events-none" />
 
           {/* Heading */}
           <div className="max-w-2xl mx-auto mb-8">
-            <span className="text-[11px] font-bold tracking-widest text-[#FF5A36] bg-[#FF5A36]/15 px-3.5 py-1.5 rounded-full uppercase font-mono mb-6 inline-block">
+            <span className="text-[11px] font-bold tracking-widest text-[#35AFA3] bg-[#35AFA3]/15 px-3.5 py-1.5 rounded-full uppercase font-mono mb-6 inline-block">
               週刊 AI インテリジェンス
             </span>
-            <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-[#86ABA5] tracking-tight leading-tight mb-4">
+            <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-[#25A69A] tracking-tight leading-tight mb-4">
               毎週のAIトレンドアップデート – 完全無料
             </h2>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed font-sans font-normal">
@@ -70,14 +70,14 @@ export default function Newsletter() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="ビジネスメールアドレスを入力してください..."
-                    className="w-full bg-[#86ABA5]/10 hover:bg-[#86ABA5]/15 focus:bg-slate-900 border border-[#86ABA5]/30 focus:border-[#FF5A36] focus:outline-none rounded-2xl pl-12 pr-4 py-4 text-sm text-white placeholder-slate-400 transition-all duration-300 h-full"
+                    className="w-full bg-[#25A69A]/10 hover:bg-[#25A69A]/15 focus:bg-slate-900 border border-[#25A69A]/30 focus:border-[#35AFA3] focus:outline-none rounded-2xl pl-12 pr-4 py-4 text-sm text-white placeholder-slate-400 transition-all duration-300 h-full"
                     id="newsletter-email-input"
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-[#FF5A36] hover:bg-[#FF6B4A] text-white font-bold text-sm px-8 py-4 rounded-2xl transition-all duration-300 shadow-lg shadow-[#FF5A36]/20 hover:-translate-y-0.5 shrink-0 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                  className="bg-[#35AFA3] hover:bg-[#35AFA3] text-white font-bold text-sm px-8 py-4 rounded-2xl transition-all duration-300 shadow-lg shadow-[#35AFA3]/20 hover:-translate-y-0.5 shrink-0 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                   id="newsletter-submit-btn"
                 >
                   {loading ? (
@@ -99,10 +99,10 @@ export default function Newsletter() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4 }}
-                className="max-w-md mx-auto p-6 bg-[#86ABA5]/20 border border-[#86ABA5]/40 rounded-3xl flex flex-col items-center justify-center text-center"
+                className="max-w-md mx-auto p-6 bg-[#25A69A]/20 border border-[#25A69A]/40 rounded-3xl flex flex-col items-center justify-center text-center"
                 id="newsletter-success-box"
               >
-                <div className="w-12 h-12 rounded-full bg-[#FF5A36] text-white flex items-center justify-center mb-4 shadow-lg shadow-[#FF5A36]/30 animate-bounce">
+                <div className="w-12 h-12 rounded-full bg-[#35AFA3] text-white flex items-center justify-center mb-4 shadow-lg shadow-[#35AFA3]/30 animate-bounce">
                   <CheckCircle2 className="h-6 w-6" />
                 </div>
                 <h4 className="font-display font-bold text-white text-base mb-1">登録が完了しました！</h4>
@@ -111,7 +111,7 @@ export default function Newsletter() {
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
-                  className="text-xs font-mono font-bold text-[#FF5A36] hover:text-[#FF6B4A] mt-4 underline decoration-[#FF5A36] cursor-pointer"
+                  className="text-xs font-mono font-bold text-[#35AFA3] hover:text-[#35AFA3] mt-4 underline decoration-[#35AFA3] cursor-pointer"
                 >
                   別のメールアドレスを登録する
                 </button>

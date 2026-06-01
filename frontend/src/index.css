@@ -5,17 +5,17 @@
   --font-sans: "Meiryo", "Plus Jakarta Sans", "Noto Sans JP", ui-sans-serif, system-ui;
   --font-display: "Space Grotesk", "Noto Sans JP", sans-serif;
   
-  --color-brand: #86ABA5;
-  --color-brand-light: #F2F6F5;
-  --color-brand-dark: #1E302D;
-  --color-brand-accent: #E07A5F; /* Cam đất/San hô tinh tế và hiện đại */
-  --color-brand-accent-bright: #FF6B4A; /* Cam rực rỡ làm highlight nút */
-  --color-brand-card: #86ABA5;
+  --color-brand: #25A69A;
+  --color-brand-light: #FAFAFA;
+  --color-brand-dark: #1F2937;
+  --color-brand-accent: #35AFA3; /* Cam đất/San hô tinh tế và hiện đại */
+  --color-brand-accent-bright: #35AFA3; /* Cam rực rỡ làm highlight nút */
+  --color-brand-card: #FFFFFF;
 }
 
 @layer base {
   body {
-    @apply font-sans text-slate-800 bg-[#F2F6F5] antialiased selection:bg-[#E07A5F] selection:text-white overflow-x-hidden;
+    @apply font-sans text-[#1F2937] bg-[#FAFAFA] antialiased selection:bg-[#35AFA3] selection:text-white overflow-x-hidden;
   }
 }
 
@@ -24,24 +24,24 @@
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #F2F6F5;
+  background: #FAFAFA;
 }
 ::-webkit-scrollbar-thumb {
-  background: #86ABA5;
+  background: #25A69A;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #1E302D;
+  background: #1F2937;
 }
 
 .gradient-hero {
-  background: linear-gradient(135deg, #86ABA5 0%, #688C86 100%);
+  background: radial-gradient(circle at 80% 50%, #E0F2F1 0%, #FFFFFF 70%);
 }
 
 .glass-card {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(134, 171, 165, 0.2);
+  border: 1px solid rgba(37, 166, 154, 0.2);
 }
 
 @keyframes marquee {

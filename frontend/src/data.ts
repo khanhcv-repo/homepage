@@ -264,52 +264,52 @@ export const PRICING_PLANS: PricingPlan[] = [
 
 export const CLIENT_LOGOS = [
   { 
-    name: "Toyota", 
-    industry: "Automotive", 
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Toyota_Logo.svg",
-    domain: "toyota.co.jp"
-  },
-  { 
-    name: "Sony", 
-    industry: "Electronics", 
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Sony_logo.svg",
-    domain: "sony.com"
-  },
-  { 
-    name: "SoftBank", 
-    industry: "Telecommunications", 
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b1/SoftBank_logo.svg",
-    domain: "softbank.jp"
-  },
-  { 
     name: "Rakuten", 
     industry: "E-Commerce", 
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Rakuten_Global_Brand_Logo.svg",
+    logoUrl: "/rakuten.png",
     domain: "rakuten.co.jp"
   },
   { 
-    name: "Fujitsu", 
-    industry: "IT Services", 
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Fujitsu-Logo.svg",
-    domain: "fujitsu.com"
-  },
-  { 
-    name: "NTT Data", 
+    name: "NTT DATA", 
     industry: "Systems Integration", 
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/d/df/NTT_Data_logo.svg",
+    logoUrl: "/nttdata.png",
     domain: "nttdata.com"
   },
   { 
-    name: "Panasonic", 
-    industry: "Electronics", 
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Panasonic_logo.svg",
-    domain: "panasonic.com"
+    name: "mercari", 
+    industry: "Marketplace", 
+    logoUrl: "/mercari.png",
+    domain: "mercari.com"
   },
   { 
-    name: "Recruit", 
-    industry: "Human Resources", 
-    logoUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Recruit_logo_2021.svg",
-    domain: "recruit-holdings.co.jp"
+    name: "SUNTORY", 
+    industry: "Beverages", 
+    logoUrl: "/suntory.png",
+    domain: "suntory.co.jp"
+  },
+  { 
+    name: "LINE", 
+    industry: "Messaging", 
+    logoUrl: "/line.png",
+    domain: "line.me"
+  },
+  { 
+    name: "docomo", 
+    industry: "Telecommunications", 
+    logoUrl: "/docomo.png",
+    domain: "nttdocomo.co.jp"
+  },
+  { 
+    name: "Money Forward", 
+    industry: "Fintech", 
+    logoUrl: "/money_forrward.png",
+    domain: "moneyforward.com"
+  },
+  { 
+    name: "YAHOO! JAPAN", 
+    industry: "Internet Services", 
+    logoUrl: "/yahoo.png",
+    domain: "yahoo.co.jp"
   }
 ];
 

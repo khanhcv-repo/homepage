@@ -70,6 +70,11 @@ Kỹ năng này chứa toàn bộ "linh hồn" văn bản của trang chủ. Age
 - **Copyright**: `© 2026 NeuroShin AI Inc. All rights reserved.`
 
 ## 🛠️ Quy tắc Kỹ thuật
-- Sử dụng màu `#FF5A36` cho CTA.
+- Sử dụng màu `#E85D22` (Terracotta Orange) cho CTA.
+- Sử dụng palette màu "Sand & Terracotta":
+  - Background Hero/Navbar/Stats/Footer: `#D5B895`
+  - Background Main Sections: `#F9F6F0`
+  - Text: `#2A2A2A`
+  - Cards: `#F9F2E8` (phụ) / `#E8D5C4` (chính)
 - Sử dụng `framer-motion` cho mọi hiệu ứng xuất hiện.
 - Đảm bảo tính Responsive tuyệt đối (Mobile/Desktop).

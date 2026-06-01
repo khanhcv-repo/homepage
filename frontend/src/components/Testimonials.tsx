@@ -5,9 +5,9 @@ import { Star, Quote, Heart } from "lucide-react";
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-24 bg-[#E8F6F4] relative overflow-hidden">
+    <section id="testimonials" className="py-24 bg-[#F8FAFA] relative overflow-hidden">
       {/* Decorative patterns */}
-      <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-[#35AFA3]/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-white/50 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -34,11 +34,11 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="p-8 rounded-3xl bg-[#FFFFFF] shadow-xl border border-white/30 flex flex-col justify-between text-left relative group hover:shadow-2xl transition-all duration-300"
+              className="p-8 rounded-3xl bg-white shadow-sm border border-slate-100 flex flex-col justify-between text-left relative group hover:shadow-2xl transition-all duration-300"
               id={`testimonial-card-${idx}`}
             >
               {/* Quotes decoration */}
-              <Quote className="absolute top-6 right-6 h-12 w-12 text-[#1F2937]/10 pointer-events-none group-hover:scale-110 transition-transform duration-300" />
+              <Quote className="absolute top-6 right-6 h-12 w-12 text-[#25A69A]/5 pointer-events-none group-hover:scale-110 transition-transform duration-300" />
 
               <div>
                 {/* Gold Rating Stars (Text Highlights) */}

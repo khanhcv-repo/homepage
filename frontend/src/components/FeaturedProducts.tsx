@@ -20,7 +20,7 @@ export default function FeaturedProducts() {
   };
 
   return (
-    <section id="featured-products" className="py-24 bg-[#E8F6F4] relative overflow-hidden">
+    <section id="featured-products" className="py-24 bg-white relative overflow-hidden">
       {/* Decorative gradients */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#25A69A]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#35AFA3]/5 rounded-full blur-3xl pointer-events-none" />
@@ -48,22 +48,22 @@ export default function FeaturedProducts() {
           {FEATURED_PRODUCTS.map((prod, idx) => {
             const isFirst = idx === 0; // ShinChat Pro
             
-            // Define themes: idx 0 is highlighted, others are uniform
+            // Define themes: idx 0 is highlighted (vibrant), others are clean
             const theme = isFirst 
-              ? { // ShinChat Pro - Highlighted Dark Theme
-                  bg: "bg-[#1F2937]", 
-                  border: "border-[#25A69A]/40", 
-                  text: "text-[#25A69A]", 
-                  sub: "text-slate-300", 
-                  accent: "bg-[#35AFA3]", 
-                  btn: "bg-[#35AFA3] hover:bg-[#35AFA3] text-white shadow-lg shadow-[#35AFA3]/20" 
+              ? { // ShinChat Pro - Bright Highlight (Teal)
+                  bg: "bg-[#25A69A]", 
+                  border: "border-[#25A69A]", 
+                  text: "text-white", 
+                  sub: "text-teal-50", 
+                  accent: "bg-white/20", 
+                  btn: "bg-white hover:bg-slate-50 text-[#25A69A] shadow-xl" 
                 }
-              : { // Other Products - Uniform Light Theme
-                  bg: "bg-[#F1F8E9]", 
-                  border: "border-slate-200", 
-                  text: "text-[#00796B]", 
-                  sub: "text-slate-600", 
-                  accent: "bg-[#B2DFDB]", 
+              : { // Other Products - Clean Professional Theme
+                  bg: "bg-[#F8FAFA]", 
+                  border: "border-slate-100", 
+                  text: "text-[#1F2937]", 
+                  sub: "text-slate-500", 
+                  accent: "bg-[#E6F4F1]", 
                   btn: "bg-[#1F2937] hover:bg-slate-800 text-white" 
                 };
             
@@ -74,16 +74,16 @@ export default function FeaturedProducts() {
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className={`rounded-3xl border p-8 flex flex-col justify-between transition-all duration-300 shadow-xl ${
-                  isFirst ? theme.bg + " " + theme.border + " text-white ring-4 ring-[#35AFA3]/20 relative overflow-hidden" : theme.bg + " " + theme.border + " text-slate-800 hover:border-[#35AFA3]/30"
+                className={`rounded-3xl border p-8 flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-xl ${
+                  isFirst ? theme.bg + " " + theme.border + " text-white relative overflow-hidden scale-105 z-20" : theme.bg + " " + theme.border + " text-slate-800"
                 }`}
                 id={`featured-${prod.id}`}
               >
                 {/* Special Highlight Ribbon for ShinChat Pro */}
                 {isFirst && (
                   <div className="absolute top-0 right-0">
-                    <div className="bg-[#35AFA3] text-white text-[10px] font-black py-1 px-10 transform rotate-45 translate-x-10 translate-y-3 shadow-md">
-                      POPULAR
+                    <div className="bg-[#FF5A36] text-white text-[10px] font-black py-1 px-10 transform rotate-45 translate-x-10 translate-y-3 shadow-md">
+                      BEST VALUE
                     </div>
                   </div>
                 )}
@@ -103,40 +103,40 @@ export default function FeaturedProducts() {
 
                   {/* Title & Slogan */}
                   <div className="mb-4 text-left">
-                    <h3 className={`text-2xl font-display font-extrabold leading-tight ${isFirst ? "text-[#25A69A]" : "text-slate-900"}`}>
+                    <h3 className={`text-2xl font-display font-extrabold leading-tight ${isFirst ? "text-white" : "text-slate-900"}`}>
                       {prod.name}
                     </h3>
-                    <p className={`text-xs mt-1 italic ${isFirst ? "text-slate-300" : "text-slate-500"}`}>
+                    <p className={`text-xs mt-1 italic ${isFirst ? "text-teal-50" : "text-slate-500"}`}>
                       {prod.tagline}
                     </p>
                   </div>
 
                   {/* Pricing Display */}
                   <div className={`mb-6 flex items-baseline gap-1 rounded-2xl px-4 py-3 border ${
-                    isFirst ? "bg-[#25A69A]/10 border-[#25A69A]/10" : "bg-white/40 border-black/5"
+                    isFirst ? "bg-white/10 border-white/10" : "bg-white border-black/5 shadow-sm"
                   }`}>
                     <span className="text-sm font-semibold opacity-75">費用: </span>
-                    <span className={`text-2xl font-display font-extrabold ${isFirst ? "text-[#35AFA3]" : "text-[#35AFA3]"}`}>
+                    <span className={`text-2xl font-display font-extrabold ${isFirst ? "text-white" : "text-[#25A69A]"}`}>
                       {prod.price}
                     </span>
                   </div>
 
                   {/* Metric Stat */}
-                  <div className={`text-xs font-mono font-semibold mb-6 flex items-center gap-1.5 ${isFirst ? "text-[#25A69A]" : "text-[#1F2937]"}`}>
-                    <span className="inline-block w-2 h-2 rounded-full bg-[#35AFA3] animate-pulse" />
+                  <div className={`text-xs font-mono font-semibold mb-6 flex items-center gap-1.5 ${isFirst ? "text-teal-50" : "text-[#1F2937]"}`}>
+                    <span className={`inline-block w-2 h-2 rounded-full ${isFirst ? "bg-white" : "bg-[#35AFA3]"} animate-pulse`} />
                     {prod.metrics}
                   </div>
 
                   {/* Feature Checklists */}
-                  <div className={`space-y-3.5 mb-8 text-left border-t pt-6 ${isFirst ? "border-[#25A69A]/10" : "border-black/5"}`}>
+                  <div className={`space-y-3.5 mb-8 text-left border-t pt-6 ${isFirst ? "border-white/10" : "border-black/5"}`}>
                     {prod.features.map((feature, fIdx) => (
                       <div key={fIdx} className="flex items-start gap-2.5">
                         <div className={`mt-0.5 rounded-full p-0.5 flex items-center justify-center shrink-0 ${
-                          isFirst ? "bg-[#25A69A]/20 text-[#25A69A]" : "bg-black/5 text-slate-600"
+                          isFirst ? "bg-white/20 text-white" : "bg-[#25A69A]/10 text-[#25A69A]"
                         }`}>
                           <Check className="h-3.5 w-3.5" />
                         </div>
-                        <span className={`text-xs sm:text-sm leading-relaxed ${isFirst ? "text-slate-300" : "text-slate-600"}`}>
+                        <span className={`text-xs sm:text-sm leading-relaxed ${isFirst ? "text-teal-50" : "text-slate-600"}`}>
                           {feature}
                         </span>
                       </div>
@@ -145,7 +145,7 @@ export default function FeaturedProducts() {
                 </div>
 
                 {/* CTA Button */}
-                <div className={`pt-4 border-t ${isFirst ? "border-[#25A69A]/10" : "border-black/5"}`}>
+                <div className={`pt-4 border-t ${isFirst ? "border-white/10" : "border-black/5"}`}>
                   <a
                     href="#pricing"
                     className={`w-full py-3 px-5 rounded-2xl font-bold text-sm tracking-wide transition-all duration-300 flex items-center justify-center gap-2 ${theme.btn}`}

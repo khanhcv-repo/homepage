@@ -24,7 +24,7 @@ export default function Services() {
   };
 
   return (
-    <section id="products" className="py-24 bg-[#F4F6F9]">
+    <section id="products" className="py-24 bg-[#F8FAFA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title */}
@@ -44,15 +44,13 @@ export default function Services() {
         {/* Card Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
           {AI_SERVICES.map((svc, idx) => {
-            const cardColors = [
-              { bg: "bg-[#E6F4F1]", icon: "bg-[#B2DFDB]", text: "text-[#00796B]" },
-              { bg: "bg-[#F3E5F5]", icon: "bg-[#CE93D8]", text: "text-[#7B1FA2]" },
-              { bg: "bg-[#FFF8E1]", icon: "bg-[#FFE082]", text: "text-[#F57C00]" },
-              { bg: "bg-[#E3F2FD]", icon: "bg-[#90CAF9]", text: "text-[#1976D2]" },
-              { bg: "bg-[#F1F8E9]", icon: "bg-[#C5E1A5]", text: "text-[#388E3C]" },
-              { bg: "bg-[#FCE4EC]", icon: "bg-[#F48FB1]", text: "text-[#C2185B]" },
-            ];
-            const theme = cardColors[idx % cardColors.length];
+            // Unified professional teal theme
+            const theme = { 
+              bg: "bg-white", 
+              icon: "bg-[#E6F4F1]", 
+              text: "text-[#25A69A]",
+              border: "border-slate-100" 
+            };
             
             return (
               <motion.div
@@ -62,11 +60,11 @@ export default function Services() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 whileHover={{ y: -6, transition: { duration: 0.2 } }}
-                className={`group relative overflow-hidden rounded-3xl p-8 shadow-lg border border-white/50 flex flex-col justify-between ${theme.bg}`}
+                className={`group relative overflow-hidden rounded-3xl p-8 shadow-sm border flex flex-col justify-between hover:shadow-xl hover:border-[#35AFA3]/30 transition-all duration-300 ${theme.bg} ${theme.border}`}
                 id={`service-card-${svc.id}`}
               >
                 {/* Backglow decoration */}
-                <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-white/20 group-hover:bg-white/30 transition-colors duration-300 pointer-events-none" />
+                <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-[#E6F4F1]/20 group-hover:bg-[#E6F4F1]/40 transition-colors duration-300 pointer-events-none" />
 
                 <div>
                   {/* Icon Circle */}

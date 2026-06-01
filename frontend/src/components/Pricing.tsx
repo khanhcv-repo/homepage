@@ -69,42 +69,42 @@ export default function Pricing() {
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 className={`relative rounded-3xl p-8 flex flex-col justify-between border transition-all duration-300 text-left ${
                   isPopular
-                    ? "bg-[#1F2937] border-[#35AFA3] shadow-2xl scale-102 lg:scale-105 z-10 text-white"
-                    : "bg-[#25A69A]/70 border-white/40 shadow-xl text-slate-900"
+                    ? "bg-[#25A69A] border-[#25A69A] shadow-2xl scale-105 z-10 text-white"
+                    : "bg-white border-slate-100 shadow-sm text-slate-900"
                 }`}
                 id={`pricing-card-${idx}`}
               >
                 {/* Popular badge */}
                 {isPopular && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#35AFA3] text-white px-4 py-1 rounded-full text-[10px] font-extrabold tracking-widest uppercase shadow-md shadow-[#35AFA3]/20 flex items-center gap-1">
-                    <CheckCircle2 className="h-3 w-3 animate-pulse" />
-                    最も選ばれているプラン
+                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#FF5A36] text-white px-4 py-1 rounded-full text-[10px] font-extrabold tracking-widest uppercase shadow-md flex items-center gap-1">
+                    <CheckCircle2 className="h-3 w-3" />
+                    MOST POPULAR
                   </span>
                 )}
 
                 <div>
                   {/* Name and desc */}
                   <div className="mb-6">
-                    <h3 className={`text-xl sm:text-2xl font-display font-extrabold ${isPopular ? "text-[#25A69A]" : "text-[#1F2937]"}`}>
+                    <h3 className={`text-xl sm:text-2xl font-display font-extrabold ${isPopular ? "text-white" : "text-[#1F2937]"}`}>
                       {plan.name}
                     </h3>
-                    <p className={`text-xs sm:text-sm mt-2 leading-relaxed ${isPopular ? "text-slate-300" : "text-slate-700"} font-medium`}>
+                    <p className={`text-xs sm:text-sm mt-2 leading-relaxed ${isPopular ? "text-teal-50" : "text-slate-500"} font-medium`}>
                       {plan.description}
                     </p>
                   </div>
 
                   {/* Pricing line */}
-                  <div className="mb-8 border-y border-[#1F2937]/10 py-5 flex flex-col">
+                  <div className={`mb-8 border-y py-5 flex flex-col ${isPopular ? "border-white/10" : "border-[#1F2937]/5"}`}>
                     <div className="flex items-baseline gap-1">
-                      <span className={`text-3xl sm:text-4xl font-display font-black tracking-tight ${isPopular ? "text-[#35AFA3]" : "text-[#1F2937]"}`}>
+                      <span className={`text-3xl sm:text-4xl font-display font-black tracking-tight ${isPopular ? "text-white" : "text-[#1F2937]"}`}>
                         {displayedPrice}
                       </span>
-                      <span className={`text-xs font-semibold ${isPopular ? "text-slate-400" : "text-slate-800"}`}>
+                      <span className={`text-xs font-semibold ${isPopular ? "text-teal-100" : "text-slate-400"}`}>
                         / {plan.period}
                       </span>
                     </div>
                     {isAnnual && plan.price !== "お問い合わせ" && plan.price !== "Liên hệ" && (
-                      <span className="text-[10px] font-mono text-[#35AFA3] mt-1 font-bold">
+                      <span className={`text-[10px] font-mono mt-1 font-bold ${isPopular ? "text-teal-200" : "text-[#35AFA3]"}`}>
                         （月々 ¥{Math.round(parseInt(plan.price.replace(/[^\d]/g, ""), 10) * 0.2).toLocaleString()} お得）
                       </span>
                     )}
@@ -114,8 +114,8 @@ export default function Pricing() {
                   <div className="space-y-4 mb-8">
                     {plan.features.map((feat, fIdx) => (
                       <div key={fIdx} className="flex items-start gap-3">
-                        <Check className={`h-4 w-4 mt-0.5 shrink-0 ${isPopular ? "text-[#25A69A]" : "text-slate-900"}`} />
-                        <span className={`text-xs sm:text-sm ${isPopular ? "text-slate-200" : "text-slate-850"} leading-snug font-medium`}>
+                        <Check className={`h-4 w-4 mt-0.5 shrink-0 ${isPopular ? "text-white" : "text-[#25A69A]"}`} />
+                        <span className={`text-xs sm:text-sm ${isPopular ? "text-white" : "text-slate-600"} leading-snug font-medium`}>
                           {feat}
                         </span>
                       </div>
@@ -124,12 +124,12 @@ export default function Pricing() {
                 </div>
 
                 {/* Pricing button */}
-                <div className="mt-auto pt-6 border-t border-[#1F2937]/10 flex flex-col gap-3">
+                <div className={`mt-auto pt-6 border-t flex flex-col gap-3 ${isPopular ? "border-white/10" : "border-[#1F2937]/5"}`}>
                   <a
                     href={plan.buttonLink}
                     className={`w-full py-3.5 px-4 rounded-xl font-bold text-xs sm:text-sm text-center transition-all duration-300 flex items-center justify-center gap-2 ${
                       isPopular
-                        ? "bg-[#35AFA3] hover:bg-[#35AFA3] text-white shadow-lg shadow-[#35AFA3]/20 hover:-translate-y-0.5"
+                        ? "bg-white hover:bg-slate-50 text-[#25A69A] shadow-xl hover:-translate-y-0.5"
                         : "bg-[#1F2937] hover:bg-slate-800 text-white shadow-sm hover:-translate-y-0.5"
                     }`}
                   >
@@ -138,10 +138,10 @@ export default function Pricing() {
                   </a>
                   
                   {/* Additional helper buttons required by user: "Bắt đầu miễn phí | So sánh gói | Link to Enterprise" */}
-                  <div className="flex justify-between items-center px-1 text-[10px] font-mono font-bold">
-                    <a href="#contact" className="hover:text-[#35AFA3] underline transition-colors">詳細を比較</a>
+                  <div className={`flex justify-between items-center px-1 text-[10px] font-mono font-bold ${isPopular ? "text-teal-100" : "text-slate-400"}`}>
+                    <a href="#contact" className="hover:underline transition-colors">詳細を比較</a>
                     {plan.name !== "エンタープライズプラン" ? (
-                      <a href="#contact" className="hover:text-[#35AFA3] flex items-center gap-0.5 transition-colors">
+                      <a href="#contact" className="hover:underline flex items-center gap-0.5 transition-colors">
                         カスタムリクエスト
                       </a>
                     ) : (

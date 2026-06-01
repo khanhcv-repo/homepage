@@ -99,7 +99,7 @@ export default function Hero() {
               
               <div className="relative w-full max-w-3xl">
                 <img 
-                  src="/maytinh1.png" 
+                  src="/maytinh3.png" 
                   alt="NeuroShin AI Platform" 
                   className="w-full h-auto object-contain mix-blend-multiply relative z-10"
                   style={{

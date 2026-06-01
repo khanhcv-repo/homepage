@@ -41,51 +41,63 @@ export default function News() {
 
         {/* News Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="news-cards-grid">
-          {NEWS_RESEARCH.map((news, idx) => (
-            <motion.article
-              key={news.id}
-              initial={{ opacity: 0, scale: 0.96, y: 25 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: idx * 0.08 }}
-              className="rounded-3xl bg-[#FAFAFA] border border-[#25A69A]/25 p-6 flex flex-col justify-between hover:shadow-xl hover:border-[#35AFA3]/30 transition-all duration-300 relative group text-left h-full"
-              id={`news-item-card-${news.id}`}
-            >
-              
-              <div>
-                {/* Visual Category Label */}
-                <div className="flex items-center gap-2 mb-4">
-                  <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold border ${getCategoryColor(news.category)}`}>
-                    {news.category}
-                  </span>
-                  <div className="flex items-center gap-1 text-[10px] text-slate-400 font-mono">
-                    <Calendar className="h-3 w-3" />
-                    {news.date}
+          {NEWS_RESEARCH.map((news, idx) => {
+            const isLatest = idx === 0;
+            return (
+              <motion.article
+                key={news.id}
+                initial={{ opacity: 0, scale: 0.96, y: 25 }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: idx * 0.08 }}
+                className={`rounded-3xl p-6 flex flex-col justify-between border transition-all duration-300 relative group text-left h-full ${
+                  isLatest 
+                    ? "bg-white border-[#25A69A] shadow-xl ring-2 ring-[#25A69A]/5" 
+                    : "bg-[#F8FAFA] border-slate-100 shadow-sm"
+                }`}
+                id={`news-item-card-${news.id}`}
+              >
+                {isLatest && (
+                  <div className="absolute -top-3 -right-2 z-10">
+                    <span className="bg-[#FF5A36] text-white text-[9px] font-black px-2 py-1 rounded-lg shadow-sm">LATEST</span>
                   </div>
+                )}
+                
+                <div>
+                  {/* Visual Category Label */}
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-bold border ${getCategoryColor(news.category)}`}>
+                      {news.category}
+                    </span>
+                    <div className="flex items-center gap-1 text-[10px] text-slate-400 font-mono">
+                      <Calendar className="h-3 w-3" />
+                      {news.date}
+                    </div>
+                  </div>
+
+                  {/* News Title */}
+                  <h3 className="font-display font-black text-slate-900 text-sm sm:text-base leading-snug group-hover:text-[#35AFA3] transition-colors duration-200 mb-6 line-clamp-3">
+                    {news.title}
+                  </h3>
                 </div>
 
-                {/* News Title */}
-                <h3 className="font-display font-black text-slate-900 text-sm sm:text-base leading-snug group-hover:text-[#35AFA3] transition-colors duration-200 mb-6 line-clamp-3">
-                  {news.title}
-                </h3>
-              </div>
+                {/* Read button */}
+                <div className={`pt-4 border-t mt-auto flex items-center justify-between ${isLatest ? "border-[#25A69A]/10" : "border-slate-100"}`}>
+                  <span className="text-[10px] text-slate-400 font-mono flex items-center gap-0.5">
+                    <BookOpen className={`h-3.5 w-3.5 ${isLatest ? "text-[#25A69A]" : "text-slate-300"}`} /> 読了時間：5分
+                  </span>
+                  <a
+                    href={news.link}
+                    className="text-xs font-bold text-[#1F2937] group-hover:text-[#35AFA3] flex items-center gap-1 transition-colors duration-200"
+                  >
+                    詳細を見る
+                    <ArrowRight className="h-3.5 w-3.5 text-[#35AFA3] group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
 
-              {/* Read button */}
-              <div className="pt-4 border-t border-[#25A69A]/10 mt-auto flex items-center justify-between">
-                <span className="text-[10px] text-slate-400 font-mono flex items-center gap-0.5">
-                  <BookOpen className="h-3.5 w-3.5 text-[#25A69A]" /> 読了時間：5分
-                </span>
-                <a
-                  href={news.link}
-                  className="text-xs font-bold text-[#1F2937] group-hover:text-[#35AFA3] flex items-center gap-1 transition-colors duration-200"
-                >
-                  詳細を見る
-                  <ArrowRight className="h-3.5 w-3.5 text-[#35AFA3] group-hover:translate-x-1 transition-transform" />
-                </a>
-              </div>
-
-            </motion.article>
-          ))}
+              </motion.article>
+            );
+          })}
         </div>
 
       </div>

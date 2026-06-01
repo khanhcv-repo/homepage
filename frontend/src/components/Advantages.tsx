@@ -14,9 +14,9 @@ export default function Advantages() {
   ];
 
   return (
-    <section id="why-us" className="py-24 bg-[#FFFFFF] relative overflow-hidden">
+    <section id="why-us" className="py-24 bg-[#F8FAFA] relative overflow-hidden">
       {/* Decorative dots layout */}
-      <div className="absolute top-1/2 left-4 w-72 h-72 bg-[#FFFFFF]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/2 left-4 w-72 h-72 bg-white/50 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -57,12 +57,12 @@ export default function Advantages() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: idx * 0.08 }}
-                  className="p-6 rounded-3xl bg-[#E6F4F1] border border-[#25A69A]/10 hover:border-[#35AFA3]/40 hover:bg-[#F1F8E9] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group text-left"
+                  className="p-6 rounded-3xl bg-white border border-slate-100 hover:border-[#35AFA3]/40 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group text-left shadow-sm"
                   id={`adv-item-${idx}`}
                 >
                   <div>
                     {/* Icon circle box */}
-                    <div className="w-11 h-11 rounded-2xl bg-white flex items-center justify-center mb-5 shadow-sm border border-[#25A69A]/5 group-hover:scale-110 group-hover:border-[#35AFA3]/20 transition-all duration-300">
+                    <div className="w-11 h-11 rounded-2xl bg-[#F8FAFA] flex items-center justify-center mb-5 shadow-sm border border-slate-100 group-hover:scale-110 group-hover:border-[#35AFA3]/20 transition-all duration-300">
                       {icons[idx]}
                     </div>
 

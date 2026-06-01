@@ -47,12 +47,25 @@ export default function FeaturedProducts() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12" id="products-cards-grid">
           {FEATURED_PRODUCTS.map((prod, idx) => {
             const isFirst = idx === 0; // ShinChat Pro
-            const cardColors = [
-              { bg: "bg-[#1F2937]", border: "border-[#25A69A]/30", text: "text-[#25A69A]", sub: "text-slate-300", accent: "bg-[#35AFA3]", btn: "bg-[#35AFA3] hover:bg-[#35AFA3] text-white" },
-              { bg: "bg-[#F3E5F5]", border: "border-[#CE93D8]/30", text: "text-[#7B1FA2]", sub: "text-slate-600", accent: "bg-[#CE93D8]", btn: "bg-[#1F2937] hover:bg-slate-800 text-white" },
-              { bg: "bg-[#FFF8E1]", border: "border-[#FFE082]/30", text: "text-[#F57C00]", sub: "text-slate-600", accent: "bg-[#FFE082]", btn: "bg-[#1F2937] hover:bg-slate-800 text-white" },
-            ];
-            const theme = cardColors[idx % cardColors.length];
+            
+            // Define themes: idx 0 is highlighted, others are uniform
+            const theme = isFirst 
+              ? { // ShinChat Pro - Highlighted Dark Theme
+                  bg: "bg-[#1F2937]", 
+                  border: "border-[#25A69A]/40", 
+                  text: "text-[#25A69A]", 
+                  sub: "text-slate-300", 
+                  accent: "bg-[#35AFA3]", 
+                  btn: "bg-[#35AFA3] hover:bg-[#35AFA3] text-white shadow-lg shadow-[#35AFA3]/20" 
+                }
+              : { // Other Products - Uniform Light Theme
+                  bg: "bg-[#F1F8E9]", 
+                  border: "border-slate-200", 
+                  text: "text-[#00796B]", 
+                  sub: "text-slate-600", 
+                  accent: "bg-[#B2DFDB]", 
+                  btn: "bg-[#1F2937] hover:bg-slate-800 text-white" 
+                };
             
             return (
               <motion.div
@@ -62,10 +75,19 @@ export default function FeaturedProducts() {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 className={`rounded-3xl border p-8 flex flex-col justify-between transition-all duration-300 shadow-xl ${
-                  isFirst ? theme.bg + " " + theme.border + " text-white" : theme.bg + " " + theme.border + " text-slate-800"
+                  isFirst ? theme.bg + " " + theme.border + " text-white ring-4 ring-[#35AFA3]/20 relative overflow-hidden" : theme.bg + " " + theme.border + " text-slate-800 hover:border-[#35AFA3]/30"
                 }`}
                 id={`featured-${prod.id}`}
               >
+                {/* Special Highlight Ribbon for ShinChat Pro */}
+                {isFirst && (
+                  <div className="absolute top-0 right-0">
+                    <div className="bg-[#35AFA3] text-white text-[10px] font-black py-1 px-10 transform rotate-45 translate-x-10 translate-y-3 shadow-md">
+                      POPULAR
+                    </div>
+                  </div>
+                )}
+                
                 <div>
                   {/* Badge & Icon Row */}
                   <div className="flex items-center justify-between mb-6">

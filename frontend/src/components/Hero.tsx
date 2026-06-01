@@ -5,11 +5,9 @@ import { ArrowRight, Check } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative pt-16 pb-0 flex flex-col overflow-hidden text-[#1F2937]">
-      {/* Top Part with Gradient Background */}
-      <div className="gradient-hero w-full pt-10 pb-2">
-        {/* Main Container */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-end pb-4 relative z-10">
+    <section id="hero" className="relative pt-16 pb-0 flex flex-col overflow-hidden gradient-hero text-[#1F2937]">
+      {/* Main Container */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-end pb-4 relative z-10 pt-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center w-full">
           
           {/* Text Left (Cols: 6/12) */}
@@ -95,21 +93,32 @@ export default function Hero() {
             className="w-full flex justify-center items-center relative z-0"
             id="hero-image"
           >
-            <div className="w-full relative flex justify-center items-center">
-              <img 
-                src="/maytinh3.png" 
-                alt="NeuroShin AI Platform" 
-                className="w-full h-auto object-contain max-w-4xl"
-              />
+            <div className="w-full relative flex justify-center items-center p-4 sm:p-10">
+              {/* Internal Gradient Glow behind the image */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#B2DFDB]/40 blur-[100px] rounded-full scale-125 -z-10 pointer-events-none" />
+              
+              <div className="relative w-full max-w-3xl">
+                <img 
+                  src="/maytinh1.png" 
+                  alt="NeuroShin AI Platform" 
+                  className="w-full h-auto object-contain mix-blend-multiply relative z-10"
+                  style={{
+                    maskImage: "radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 85%)",
+                    WebkitMaskImage: "radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 85%)",
+                    filter: "brightness(1.08) contrast(1.05)"
+                  }}
+                />
+                {/* Subtle gradient overlay directly on the image area */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#B2DFDB]/15 mix-blend-multiply pointer-events-none z-20 rounded-3xl opacity-40" />
+              </div>
             </div>
           </motion.div>
 
         </div>
       </div>
-    </div>
 
-    {/* Logo Carousel Client List */}
-      <div className="w-full bg-white border-t border-slate-100 pt-4 pb-4 overflow-hidden relative z-10 shadow-[0_-15px_40px_rgba(0,0,0,0.04)]" id="client-carousel">
+      {/* Logo Carousel Client List */}
+      <div className="w-full bg-white border-t border-slate-100 pt-8 pb-4 overflow-hidden relative z-10 shadow-[0_-15px_40px_rgba(0,0,0,0.04)]" id="client-carousel">
         <div className="max-w-7xl mx-auto px-4 mb-2 text-center pt-5">
           <p className="text-[15px] uppercase tracking-[0.3em] text-slate-800 font-black">アジアを代表する信頼のテクノロジーパートナー</p>
         </div>

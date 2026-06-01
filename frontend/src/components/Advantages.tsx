@@ -36,7 +36,7 @@ export default function Advantages() {
             </p>
 
             {/* Micro visual graphic */}
-            <div className="p-6 rounded-3xl bg-[#FAFAFA] border border-[#25A69A]/20 flex items-center gap-4 shadow-sm">
+            <div className="p-6 rounded-3xl bg-[#E6F4F1] border border-[#25A69A]/20 flex items-center gap-4 shadow-sm">
               <div className="p-3 bg-[#1F2937] rounded-2xl text-white shrink-0">
                 <ShieldAlert className="h-6 w-6 text-[#35AFA3]" />
               </div>
@@ -57,12 +57,12 @@ export default function Advantages() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: idx * 0.08 }}
-                  className="p-6 rounded-3xl bg-[#FFFFFF]/10 border border-[#25A69A]/20 hover:border-[#35AFA3]/40 hover:bg-[#FAFAFA] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group text-left"
+                  className="p-6 rounded-3xl bg-[#E6F4F1] border border-[#25A69A]/10 hover:border-[#35AFA3]/40 hover:bg-[#F1F8E9] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group text-left"
                   id={`adv-item-${idx}`}
                 >
                   <div>
                     {/* Icon circle box */}
-                    <div className="w-11 h-11 rounded-2xl bg-[#FAFAFA] flex items-center justify-center mb-5 shadow-sm border border-slate-100 group-hover:scale-110 group-hover:border-[#35AFA3]/20 transition-all duration-300">
+                    <div className="w-11 h-11 rounded-2xl bg-white flex items-center justify-center mb-5 shadow-sm border border-[#25A69A]/5 group-hover:scale-110 group-hover:border-[#35AFA3]/20 transition-all duration-300">
                       {icons[idx]}
                     </div>
 

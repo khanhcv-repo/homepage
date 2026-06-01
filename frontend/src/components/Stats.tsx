@@ -41,15 +41,13 @@ export default function Stats() {
         </div>
 
         {/* Bento/Flex Numbers Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="stats-grid">
-          {IMPRESSIVE_STATS.slice(0, 4).map((stat, idx) => {
-            const cardColors = [
-              { bg: "bg-[#E6F4F1]", icon: "bg-[#B2DFDB]", text: "text-[#00796B]" },
-              { bg: "bg-[#F1F8E9]", icon: "bg-[#C5E1A5]", text: "text-[#388E3C]" },
-              { bg: "bg-[#E8F5E9]", icon: "bg-[#A5D6A7]", text: "text-[#2E7D32]" },
-              { bg: "bg-[#E3F2FD]", icon: "bg-[#90CAF9]", text: "text-[#1976D2]" },
-            ];
-            const theme = cardColors[idx % cardColors.length];
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6" id="stats-grid">
+          {IMPRESSIVE_STATS.map((stat, idx) => {
+            // First 4 items use the teal theme, 5th item (idx 4) uses golden theme
+            const isAward = idx === 4;
+            const theme = isAward 
+              ? { bg: "bg-[#FFF8E1]", icon: "bg-[#FFE082]", text: "text-[#F57F17]" } // Golden/Award theme
+              : { bg: "bg-[#E6F4F1]", icon: "bg-[#B2DFDB]", text: "text-[#00796B]" }; // Uniform Teal theme
             
             return (
               <motion.div

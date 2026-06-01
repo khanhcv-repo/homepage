@@ -59,7 +59,9 @@ export default function Navbar() {
               <a
                 key={idx}
                 href={link.href}
-                className="text-sm font-medium text-[#1F2937] hover:text-[#35AFA3] transition-colors duration-200 relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[#35AFA3] hover:after:w-full after:transition-all after:duration-300"
+                className={`text-sm font-medium transition-colors duration-200 relative after:absolute after:-bottom-1 after:left-0 after:w-0 after:h-0.5 after:bg-[#35AFA3] hover:after:w-full after:transition-all after:duration-300 ${
+                  isScrolled ? "text-[#1F2937] hover:text-[#35AFA3]" : "text-[#1F2937] hover:text-[#35AFA3]"
+                }`}
               >
                 {link.name}
               </a>
@@ -81,7 +83,9 @@ export default function Navbar() {
           <div className="md:hidden flex items-center" id="mobile-toggle-container">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-xl text-[#1F2937] hover:text-[#1F2937] hover:bg-slate-800/50 focus:outline-none transition-all duration-200"
+              className={`inline-flex items-center justify-center p-2 rounded-xl focus:outline-none transition-all duration-200 ${
+                isScrolled ? "text-[#1F2937] hover:bg-slate-800/5" : "text-[#1F2937] hover:bg-slate-800/5"
+              }`}
               aria-expanded="false"
               id="mobile-menu-btn"
             >

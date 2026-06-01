@@ -77,7 +77,7 @@ export default function Newsletter() {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-white hover:bg-slate-50 text-[#25A69A] font-bold text-sm px-8 py-4 rounded-2xl transition-all duration-300 shadow-lg hover:-translate-y-0.5 shrink-0 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
+                  className="bg-[#FF5A36] hover:bg-[#FF6B4A] text-white font-bold text-sm px-8 py-4 rounded-2xl transition-all duration-300 shadow-lg hover:-translate-y-0.5 shrink-0 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                   id="newsletter-submit-btn"
                 >
                   {loading ? (

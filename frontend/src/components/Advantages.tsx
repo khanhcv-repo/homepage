@@ -57,12 +57,12 @@ export default function Advantages() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: idx * 0.08 }}
-                  className="p-6 rounded-3xl bg-white border border-slate-100 hover:border-[#35AFA3]/40 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group text-left shadow-sm"
+                  className="p-6 rounded-3xl bg-[#E6F4F1] border border-[#25A69A]/10 hover:border-[#35AFA3]/40 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group text-left shadow-sm"
                   id={`adv-item-${idx}`}
                 >
                   <div>
                     {/* Icon circle box */}
-                    <div className="w-11 h-11 rounded-2xl bg-[#F8FAFA] flex items-center justify-center mb-5 shadow-sm border border-slate-100 group-hover:scale-110 group-hover:border-[#35AFA3]/20 transition-all duration-300">
+                    <div className="w-11 h-11 rounded-2xl bg-white flex items-center justify-center mb-5 shadow-sm border border-slate-100 group-hover:scale-110 group-hover:border-[#35AFA3]/20 transition-all duration-300">
                       {icons[idx]}
                     </div>
 

@@ -59,12 +59,12 @@ export default function FeaturedProducts() {
                   btn: "bg-white hover:bg-slate-50 text-[#25A69A] shadow-xl" 
                 }
               : { // Other Products - Clean Professional Theme
-                  bg: "bg-[#F8FAFA]", 
-                  border: "border-slate-100", 
+                  bg: "bg-[#E6F4F1]", 
+                  border: "border-[#25A69A]/10", 
                   text: "text-[#1F2937]", 
                   sub: "text-slate-500", 
-                  accent: "bg-[#E6F4F1]", 
-                  btn: "bg-[#1F2937] hover:bg-slate-800 text-white" 
+                  accent: "bg-white", 
+                  btn: "bg-[#FF5A36] hover:bg-[#FF6B4A] text-white shadow-lg shadow-[#FF5A36]/20" 
                 };
             
             return (

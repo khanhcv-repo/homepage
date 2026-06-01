@@ -70,7 +70,7 @@ export default function Pricing() {
                 className={`relative rounded-3xl p-8 flex flex-col justify-between border transition-all duration-300 text-left ${
                   isPopular
                     ? "bg-[#25A69A] border-[#25A69A] shadow-2xl scale-105 z-10 text-white"
-                    : "bg-white border-slate-100 shadow-sm text-slate-900"
+                    : "bg-[#E6F4F1] border-[#25A69A]/10 shadow-sm text-slate-900"
                 }`}
                 id={`pricing-card-${idx}`}
               >
@@ -130,7 +130,7 @@ export default function Pricing() {
                     className={`w-full py-3.5 px-4 rounded-xl font-bold text-xs sm:text-sm text-center transition-all duration-300 flex items-center justify-center gap-2 ${
                       isPopular
                         ? "bg-white hover:bg-slate-50 text-[#25A69A] shadow-xl hover:-translate-y-0.5"
-                        : "bg-[#1F2937] hover:bg-slate-800 text-white shadow-sm hover:-translate-y-0.5"
+                        : "bg-[#FF5A36] hover:bg-[#FF6B4A] text-white shadow-lg shadow-[#FF5A36]/20 hover:-translate-y-0.5"
                     }`}
                   >
                     {plan.buttonText}

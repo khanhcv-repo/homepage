@@ -44,12 +44,21 @@ export default function Services() {
         {/* Card Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
           {AI_SERVICES.map((svc, idx) => {
-            // Unified professional teal theme
+            // Distinct vibrant colors for icon backgrounds
+            const iconBgColors = [
+              "bg-[#FF5A36]", // Orange
+              "bg-[#3B82F6]", // Blue
+              "bg-[#8B5CF6]", // Purple
+              "bg-[#10B981]", // Green
+              "bg-[#F59E0B]", // Amber
+              "bg-[#6366F1]"  // Indigo
+            ];
+
             const theme = { 
-              bg: "bg-white", 
-              icon: "bg-[#E6F4F1]", 
-              text: "text-[#25A69A]",
-              border: "border-slate-100" 
+              bg: "bg-[#E6F4F1]", 
+              icon: iconBgColors[idx % iconBgColors.length], 
+              text: "text-white",
+              border: "border-[#25A69A]/10" 
             };
             
             return (

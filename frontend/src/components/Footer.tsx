@@ -45,7 +45,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="footer" className="bg-[#35AFA3] text-white pt-20 pb-8 border-t border-white/10 overflow-hidden relative">
+    <footer id="footer" className="bg-[#25A69A] text-white pt-20 pb-8 border-t border-white/10 overflow-hidden relative">
       {/* Decorative vector shape background */}
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-white/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -57,7 +57,7 @@ export default function Footer() {
           {/* Logo & Slogan Column (Cols: 4) */}
           <div className="lg:col-span-4 flex flex-col text-left" id="footer-company-column">
             <div className="flex items-center gap-2 mb-4">
-              <div className="p-2 rounded-xl bg-white text-[#35AFA3] shadow-md">
+              <div className="p-2 rounded-xl bg-white text-[#25A69A] shadow-md">
                 <Cpu className="h-5 w-5" />
               </div>
               <div className="flex flex-col">
@@ -71,7 +71,7 @@ export default function Footer() {
               {SLOGAN}
             </p>
             <p className="text-xs text-white/70 leading-relaxed font-sans mb-6 max-w-sm">
-              NeuroShin AI は、アジアを代表する最先端のAIソリューション te を tạo raし、企業のプロセス自動化の飛躍と、最高峰の顧客体験の構築を支援します。
+              NeuroShin AI は、アジアを代表する最先端のAIソリューション te を tạo raし、企業のプロセス自動化の飛躍と、最高峰 của 顧客体験の構築を支援します。
             </p>
 
             {/* Social icons */}
@@ -174,7 +174,7 @@ export default function Footer() {
           
           {/* Hotline */}
           <div className="flex gap-3 items-center group">
-            <div className="p-3 bg-white/10 rounded-2xl text-white group-hover:bg-white group-hover:text-[#35AFA3] transition-colors duration-300 shrink-0">
+            <div className="p-3 bg-white/10 rounded-2xl text-white group-hover:bg-white group-hover:text-[#25A69A] transition-colors duration-300 shrink-0">
               <Phone className="h-5 w-5" />
             </div>
             <div className="flex flex-col">
@@ -190,7 +190,7 @@ export default function Footer() {
 
           {/* Email */}
           <div className="flex gap-3 items-center group">
-            <div className="p-3 bg-white/10 rounded-2xl text-white group-hover:bg-white group-hover:text-[#35AFA3] transition-colors duration-300 shrink-0">
+            <div className="p-3 bg-white/10 rounded-2xl text-white group-hover:bg-white group-hover:text-[#25A69A] transition-colors duration-300 shrink-0">
               <Mail className="h-5 w-5" />
             </div>
             <div className="flex flex-col">
@@ -206,7 +206,7 @@ export default function Footer() {
 
           {/* Location / Address */}
           <div className="flex gap-3 items-start group">
-            <div className="p-3 bg-white/10 rounded-2xl text-white group-hover:bg-white group-hover:text-[#35AFA3] transition-colors duration-300 shrink-0">
+            <div className="p-3 bg-white/10 rounded-2xl text-white group-hover:bg-white group-hover:text-[#25A69A] transition-colors duration-300 shrink-0">
               <MapPin className="h-5 w-5" />
             </div>
             <div className="flex flex-col">

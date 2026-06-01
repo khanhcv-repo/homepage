@@ -23,21 +23,21 @@ export default function Stats() {
   };
 
   return (
-    <section id="stats" className="py-20 relative overflow-hidden bg-[#FFFFFF] text-[#1F2937]">
+    <section id="stats" className="py-20 relative overflow-hidden bg-[#25A69A] text-white">
       {/* Decorative grids */}
-      <div className="absolute inset-0 bg-[radial-gradient(#25A69A_1px,transparent_1px)] [background-size:16px_16px] opacity-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px] opacity-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header summary text */}
         <div className="text-center max-w-2xl mx-auto mb-16" id="stats-title-block">
-          <p className="text-sm font-bold tracking-widest text-[#35AFA3] uppercase font-mono mb-2">
+          <p className="text-sm font-bold tracking-widest text-white/80 uppercase font-mono mb-2">
             NeuroShin 実績指標
           </p>
-          <h2 className="text-3xl font-display font-extrabold tracking-tight">
+          <h2 className="text-3xl font-display font-extrabold tracking-tight text-white">
             成功を裏付ける実績
           </h2>
-          <div className="w-12 h-1 bg-[#25A69A] mx-auto mt-4" />
+          <div className="w-12 h-1 bg-white/30 mx-auto mt-4" />
         </div>
 
         {/* Bento/Flex Numbers Grid */}

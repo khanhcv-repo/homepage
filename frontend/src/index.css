@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Plus Jakarta Sans", "Noto Sans JP", ui-sans-serif, system-ui;
+  --font-sans: "Meiryo", "Plus Jakarta Sans", "Noto Sans JP", ui-sans-serif, system-ui;
   --font-display: "Space Grotesk", "Noto Sans JP", sans-serif;
   
   --color-brand: #86ABA5;

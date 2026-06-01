@@ -88,7 +88,7 @@ export default function Hero() {
           {/* Hero Image Right (Cols: 6/12) */}
           <motion.div
             initial={{ opacity: 0, x: 30, scale: 1, y: 0 }}
-            animate={{ opacity: 1, x: 0, scale: 1.1, y: 60 }}
+            animate={{ opacity: 1, x: 0, scale: 1.45, y: 85 }}
             transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
             className="w-full flex justify-center items-center relative z-0"
             id="hero-image"
@@ -97,7 +97,7 @@ export default function Hero() {
               {/* Internal Gradient Glow behind the image */}
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#B2DFDB]/40 blur-[100px] rounded-full scale-125 -z-10 pointer-events-none" />
               
-              <div className="relative w-full max-w-3xl">
+              <div className="relative w-full max-w-5xl">
                 <img 
                   src="/maytinh3.png" 
                   alt="NeuroShin AI Platform" 

@@ -1,106 +1,85 @@
 ---
 name: gen-ui-homepage
-description: Kỹ năng "Master Blueprint" chứa toàn bộ nội dung văn bản (tiếng Nhật), thông số thiết kế và logic kỹ thuật của trang chủ NeuroShin AI. Dùng để generate mã nguồn chính xác đến từng từ ngữ.
+description: Kỹ năng "Master Blueprint" chứa toàn bộ mã nguồn chuẩn, thông số thiết kế (Teal/Orange) và logic kỹ thuật của trang chủ NeuroShin AI. Dùng để generate mã nguồn chính xác 100% so với UI hiện tại.
 ---
 
-# 📖 Catalog Nội dung Tuyệt đối: NeuroShin AI Homepage
+# 📖 Master Blueprint: NeuroShin AI Homepage Content & Logic
 
-Kỹ năng này chứa toàn bộ "linh hồn" văn bản của trang chủ. Agent phải sử dụng chính xác các chuỗi ký tự này khi generate code.
+Kỹ năng này định nghĩa cấu trúc chuẩn và toàn bộ nội dung văn bản (linh hồn) của trang chủ. Agent phải tuân thủ nghiêm ngặt các thông số này.
 
-## 1. Navbar & Navigation
-- **Logo**: `NeuroShin AI` | Badge: `日本テクノロジー`
-- **Menu Links**:
-  - `AI製品` (#products)
-  - `選ばれる理由` (#why-us)
-  - `お客様の声` (#testimonials)
-  - `料金プラン` (#pricing)
-  - `ニュース` (#news)
-- **CTA Button**: `無料で始める`
+## 1. Thông tin chung (Brand Identity)
+- **Company Name**: `NeuroShin AI`
+- **Corporate Slogan**: `“より深く考え、より賢く成長する”`
+- **Core Domain**: `NeuroShin AIは、企業や個人が業務を自動化し、生産性を向上させ、かつてないほど正確な意思決定を行えるよう支援する画期的なAI製品を開発しています。`
 
-## 2. Hero Section & Chatbot
-- **Main Heading**: `NeuroShin AI`
-- **Badge**: `AIソリューションのパイオニア`
-- **Slogan**: `“より深く考え、より賢く成長する”`
-- **Description**: `NeuroShin AIは、企業や個人が業務を自動化し、生産性を向上させ、かつてないほど正確な意思決定を行えるよう支援する画期的なAI製品を開発しています。`
-- **Chatbot (ShinChat Pro)**:
-  - Welcome: `こんにちは！私は NeuroShin AI によってトレーニングされた ShinChat Pro です。貴社のカスタマーサービスをどのように革新できるか、お手伝いしましょうか？`
-  - Sample Prompts: `🤖 ShinChat`, `🔒 セキュリティ`, `🇯🇵 日本語`
-  - Bot Responses:
-    - *Security*: `NeuroShin AI は ISO 27001 および APPI（日本の個人情報保護法）を遵守しています...`
-    - *Japanese*: `当社の独自モデル JaLLM 2.0 は、日本語の語彙構造、敬語、および日本企業特有のビジネス文化に合わせて深く最適化されています。`
+## 2. Chi tiết nội dung từng Section
 
-## 3. AI Services (テクノロジー領域)
-1. **AIチャットボット**: 文脈を理解し、ネイティブのような自然な応答で24時間365日のカスタマーケアを自動化します。
-2. **AIデータ分析**: 企業の生のデータ資産を画期的なビジネスの意思決定に変え、市場トレンドを正確に予測します。
-3. **AIコンテンツ生成**: SEOに強い記事の執筆、クリエイティブな画像デザインを数秒で実現。
-4. **AI画像認識**: コンピュータビジョンシステムで、検査やセキュリティ監視に応用可能。
-5. **AI予測＆最適化**: リソースを最適化し、企業の運営効率を飛躍的に向上させます。
-6. **AIセキュリティ**: インテリジェントな脅威をリアルタイムで検出し、データ漏洩を防止します。
+### 2.1 Navbar
+- **Menu Items**: `AI製品`, `選ばれる理由`, `お客様の声`, `料金プラン`, `ニュース`
+- **CTA**: `無料で始める`
+- **Sub-badge**: `日本テクノロジー`
 
-## 4. Stats (実績指標)
-- `50,000+` / `導入企業数` (世界中の đối tác)
-- `99.9%` / `稼働率コミットメント` ( Cloud base stability)
-- `3秒` / `平均応答時間` (Rapid response)
-- `120+` / `展開国数` (Global scale)
+### 2.2 Hero Section
+- **Heading**: `NeuroShin AI`
+- **Sub-text**: Slogan (mục 1).
+- **CTA 1**: `無料体験` (#pricing)
+- **CTA 2**: `開発者に問い合わせる` (#contact)
+- **Trust Metrics**: `APPI準拠`, `ISO 27001 セキュリティ`, `100% オンプレミス対応`
+- **Partner Marquee**:
+  - **Title**: `アジアを代表する信頼のテクノロジーパートナー`
+  - **Client List**: `Rakuten`, `NTT DATA`, `mercari`, `SUNTORY`, `LINE`, `docomo`, `Money Forward`, `YAHOO! JAPAN`.
+  - **Behavior**: Hiệu ứng cuộn ngang vô tận (Infinite Marquee).
+
+### 2.3 AI Services (テクノロジー領域)
+- **Section Heading**: `包括的なAI製品ポートフォリオ`
+- **Services List**:
+  1. `AIチャットボット＆バーチャルアシスタント`: 文脈を理解し... (xem data.ts)
+  2. `AIデータ分析`: 企業の生のデータ資産を...
+  3. `AIコンテンツ生成`: SEOに強い記事の執筆...
+  4. `AI画像認識`: 画像や動画を高速で処理...
+  5. `AI予測＆最適化`: リソースを最適化し...
+  6. `AIセキュリティ`: 自己学習型の機械学習モデル...
+
+### 2.4 Stats (実績指標)
+- `50,000+` / `導入企業数`
+- `99.9%` / `稼働率コミットメント`
+- `3秒` / `平均応答時間`
+- `120+` / `展開国数`
 - `Asia Pacific` / `AI Innovation Award 2024`
 
-## 5. Featured Products (主力製品)
-1. **ShinChat Pro**: `多言語に最適化された次世代AI対話アシスタント` (¥19,800) - *Best Seller*
-2. **DataShin Analytics**: `オールインワンのAIデータ分析プラットフォーム` (¥29,800) - *Enterprise*
-3. **ShinVision**: `リアルタイム分析AIコンピュータビジョン` (¥39,800) - *Pioneer Tech*
-4. **ContentShin Studio**: `AIマルチメディアコンテンツ制作スタジオ` (¥9,800) - *Creativity*
+### 2.5 Featured Products (主力製品)
+- **Heading**: `NeuroShin の主力製品`
+- **Products**:
+  - `ShinChat Pro`: `多言語に最適化された次世代AI対話アシスタント` (¥19,800/月)
+  - `DataShin Analytics`: `オールインワンのAI data phân tích platform` (¥29,800/月)
+  - `ShinVision`: `Real-time analysis AI Computer Vision` (¥39,800/月)
+  - `ContentShin Studio`: `AI Multimedia content production studio` (¥9,800/月)
 
-## 6. Advantages (選ばれる理由)
-- `独自開発의 AIモデル`: Không phụ thuộc bên thứ 3.
-- `日本語への深い最適化`: Hiểu sâu sắc ngữ cảnh và kính ngữ.
-- `絶対的なデータセキュリティ`: Tuân thủ ISO 27001 & APPI.
-- `容易かつ柔軟な統合`: API/SDK linh hoạt.
-- `継続的な自己学習`: Tự động nâng cấp độ chính xác.
-- `マンツーマンの導入支援`: Hỗ trợ chuyên gia 1-1.
+### 2.6 Advantages (选ばれる理由)
+- **Heading**: `なぜ NeuroShin AI なのか？`
+- **Points**: `独自開発의 AIモデル`, `日本語への深い最適化`, `絶対的なデータセキュリティ`, `容易かつ柔軟な統合`, `継続的な自己学習`, `マンツーマンの導入支援`.
 
-## 7. Pricing Plans
-- **Starter** (¥6,600/月): Cá nhân & Startup nhỏ.
-- **Business** (¥26,400/月): Doanh nghiệp đang phát triển (*Phổ biến nhất*).
-- **Enterprise** (お問い合わせ): Tập đoàn lớn, hỗ trợ On-premise.
+### 2.7 Pricing (料金プラン)
+- **Heading**: `売上 を飛躍させるパートナーシップ料金プラン`
+- **Plans**: 
+  - `スタータープラン` (¥6,600/月)
+  - `ビジネスプラン` (¥26,400/月 - *Most Popular*)
+  - `エンタープライズプラン` (お問い合わせ)
+- **Logic**: Discount 20% khi bật `年払い`.
 
-## 8. Footer & Newsletter (Chi tiết Hệ thống)
+### 2.8 Testimonials (お客様の声)
+- **Authors**: `Yamamoto Kenji` (Rakuten), `Tanaka Yuki` (COO, SoftBank), `Nakamura Hiroshi` (CEO, FinLink).
 
-### A. Newsletter & Contact Section
-- **Badge/Label**: `週刊 AI インテリジェンス`
-- **Main Heading**: `毎週のAIトレンドアップデート – 完全無料`
-- **Description**: `毎週、25,000人以上のテクノロジーリーダーが NeuroShin AI ニュースレターを読んでいます。インサイト、実際のケーススタディ、限定特典をメールボックスに trực tiếp お届けします。`
-- **Form UI**:
-  - Placeholder: `ビジネスメールアドレスを入力してください...`
-  - Submit Button: `無料で登録する`
-  - Loading State: `登録中...`
-- **Success State**:
-  - Heading: `登録が完了しました！`
-  - Message: `NeuroShin AI エリートコミュニティへようこそ。最初の分析レポートは来週の月曜日にメールボックスに届きます。`
-  - Link: `別のメールアドレスを登録する`
-- **Styling**: Gradient background `from-[#25A69A] to-[#35AFA3]`, Button `#FF5A36`.
+### 2.9 News (研究・ニュースセンター)
+- **Latest**: `NeuroShin AI、日本語に最適化された大規模言語モデル「JaLLM 2.0」を正式リリース。`
 
-### B. Corporate Footer
-- **Branding**: `NeuroShin AI` | Badge: `日本テクノロジー`
-- **Company Intro**: `NeuroShin AI は、アジアを代表する最先端 của AIソリューションを創造し、企業のプロセス自動化の飛躍と、最高峰の顧客体験の構築を支援します。`
-- **Links Grid**:
-  - **製品**: `ShinChat Pro`, `DataShin Analytics`, `ShinVision`, `ContentShin Studio`, `API マーケットプレイス`
-  - **会社**: `NeuroShin AI について`, `創設チーム`, `パートナー採用`, `プレス＆メディア`, `直接お問い合わせ`
-  - **リソース**: `技術APIドキュメント`, `共有ブログ`, `実際のケーススタディ`, `詳細ウェビナー`, `開発者コミュニティ`
-  - **法的情報**: `プライバシーポリシー`, `利用規約`, `クッキーポリシー`, `APPI準拠`
-- **Social Connect**: LinkedIn, Facebook, YouTube, Twitter, GitHub (Hiệu ứng hover đổi màu thương hiệu).
-- **Contact Information (3 Columns)**:
-  - **Hotline**: `0120-888-999` (9:00 – 18:00 | 月曜日 – 金曜日)
-  - **Email**: `hello@neuroshin-ai.co.jp` (2営業時間以内に返信)
-  - **Address**: `〒100-0005 東京都千代田区丸の内1丁目9番2号 グラントウキョウサウスタワー 18F`
-- **Bottom Copyright**:
-  - Text: `© 2025-2026 NeuroShin AI 株式会社. 全著作権所有.`
-  - Credits: `東京とハノイで開発 | 提供： NeuroShin JaLLM v2.0`
+### 2.10 Newsletter & Footer
+- **Newsletter Heading**: `毎週のAIトレンドアップデート – 完全無料`
+- **Contact Email**: `hello@neuroshin-ai.co.jp`
+- **Address**: `〒100-0005 東京都千代田区丸の内1丁目9番2号 グラントウキョウサウスタワー 18F`
 
-
-## 🛠️ Quy tắc Kỹ thuật
-- **Quản lý Asset**:
-  - Tất cả các file hình ảnh `.png` phải được đặt trong thư mục `frontend/src/assets`.
-  - Phải `import` ảnh trực tiếp trong React component (ví dụ: `import heroImage from '../assets/hero.png'`) để Vite xử lý bundle chính xác.
-- **Hiệu ứng & Responsive**:
-  - Sử dụng `motion/react` (Framer Motion) cho mọi hiệu ứng xuất hiện (`initial`, `whileInView`, `animate`).
-  - Đảm bảo tính Responsive tuyệt đối (Mobile/Desktop) sử dụng Tailwind CSS utilities.
+## 3. Quy tắc Kỹ thuật (Technical Specs)
+- **Colors**: Teal (`#25A69A`), Orange (`#FF5A36`).
+- **Framework**: React 18, Vite, Tailwind CSS 4, Motion/React.
+- **Assets**: Phải import từ `src/assets`.
+- **Testing**: Phải pass 39 test cases trong `frontend/src/__tests__`.

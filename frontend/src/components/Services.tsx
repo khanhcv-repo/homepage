@@ -97,7 +97,7 @@ export default function Services() {
                   <span className="text-[11px] font-mono tracking-wider text-slate-400 font-semibold uppercase">
                     NeuroShin テクノロジー
                   </span>
-                  <span className={`text-xs font-semibold flex items-center gap-1 transition-colors duration-200 cursor-pointer ${theme.text}`}>
+                  <span className="text-xs font-semibold flex items-center gap-1 transition-colors duration-200 cursor-pointer text-black">
                     さらに詳しく
                     <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </span>

@@ -92,7 +92,7 @@ export default function FeaturedProducts() {
                   {/* Badge & Icon Row */}
                   <div className="flex items-center justify-between mb-6">
                     <span className={`px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase ${
-                      isFirst ? "bg-[#35AFA3] text-white" : "bg-white/50 text-slate-900 border border-black/5"
+                      isFirst ? "bg-[#FF5A36] text-white" : "bg-[#25A69A] text-white"
                     }`}>
                       {prod.badge}
                     </span>
@@ -116,7 +116,7 @@ export default function FeaturedProducts() {
                     isFirst ? "bg-white/10 border-white/10" : "bg-white border-black/5 shadow-sm"
                   }`}>
                     <span className="text-sm font-semibold opacity-75">費用: </span>
-                    <span className={`text-2xl font-display font-extrabold ${isFirst ? "text-white" : "text-[#25A69A]"}`}>
+                    <span className={`text-2xl font-display font-extrabold ${isFirst ? "text-[#FF5A36]" : "text-[#25A69A]"}`}>
                       {prod.price}
                     </span>
                   </div>

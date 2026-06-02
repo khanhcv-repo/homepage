@@ -5,12 +5,21 @@ import { Cpu, Languages, EyeOff, Code, RefreshCw, HeartHandshake, ShieldAlert } 
 
 export default function Advantages() {
   const icons = [
-    <Cpu className="h-6 w-6 text-[#35AFA3]" />,
-    <Languages className="h-6 w-6 text-[#35AFA3]" />,
-    <EyeOff className="h-6 w-6 text-[#35AFA3]" />,
-    <Code className="h-6 w-6 text-[#35AFA3]" />,
-    <RefreshCw className="h-6 w-6 text-[#35AFA3]" />,
-    <HeartHandshake className="h-6 w-6 text-[#35AFA3]" />,
+    <Cpu className="h-6 w-6 text-white" />,
+    <Languages className="h-6 w-6 text-white" />,
+    <EyeOff className="h-6 w-6 text-white" />,
+    <Code className="h-6 w-6 text-white" />,
+    <RefreshCw className="h-6 w-6 text-white" />,
+    <HeartHandshake className="h-6 w-6 text-white" />,
+  ];
+
+  const iconBgColors = [
+    "bg-[#FF5A36]", // Orange
+    "bg-[#3B82F6]", // Blue
+    "bg-[#8B5CF6]", // Purple
+    "bg-[#10B981]", // Green
+    "bg-[#F59E0B]", // Amber
+    "bg-[#6366F1]"  // Indigo
   ];
 
   return (
@@ -62,7 +71,7 @@ export default function Advantages() {
                 >
                   <div>
                     {/* Icon circle box */}
-                    <div className="w-11 h-11 rounded-2xl bg-white flex items-center justify-center mb-5 shadow-sm border border-slate-100 group-hover:scale-110 group-hover:border-[#35AFA3]/20 transition-all duration-300">
+                    <div className={`w-11 h-11 rounded-2xl flex items-center justify-center mb-5 shadow-sm group-hover:scale-110 transition-all duration-300 ${iconBgColors[idx % 6]}`}>
                       {icons[idx]}
                     </div>
 

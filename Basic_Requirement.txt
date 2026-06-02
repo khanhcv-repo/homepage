@@ -1,34 +1,33 @@
-# TỔNG QUAN DỰ ÁN NEUROSHIN AI
+# TÓM TẮT GIAO DIỆN NEUROSHIN AI
 
-Tài liệu tóm tắt các thành phần chính của giao diện website NeuroShin AI (Thị trường Nhật Bản).
+Tài liệu rút gọn về các thông số và cấu trúc UI hiện tại.
 
 ---
 
-## 🎨 Nhận diện thương hiệu
-*   **Thương hiệu:** NeuroShin AI (Công nghệ Nhật Bản).
-*   **Màu chủ đạo:** Cam rực rỡ (`#FF5A36`).
+## 🎨 Thông số thiết kế chính
+*   **Màu chủ đạo:** Xanh Teal (`#25A69A`).
+*   **Màu điểm nhấn (Nút/Tag):** Cam rực rỡ (`#FF5A36`).
+*   **Màu nền thẻ (Cards):** Xanh nhạt (`#dffbfb`).
 *   **Ngôn ngữ:** Tiếng Nhật 100%.
 
 ---
 
-## 🏗️ Cấu trúc trang chủ (9 Khối chính)
+## 🏗️ Cấu trúc Trang chủ (9 Phần)
 
-1.  **Thanh điều hướng (Navbar):** Menu nhảy nhanh đến các phần và nút "Dùng thử miễn phí".
-2.  **Màn hình chính (Hero):** 
-    - Lời chào và nút kêu gọi hành động.
-    - **Chatbot Demo:** Khách hàng có thể chat thử trực tiếp.
-    - **Dải Logo đối tác:** Logo thật của các tập đoàn lớn (Sony, Toyota, SoftBank...).
-3.  **Lĩnh vực AI (Services):** 6 mảng công nghệ (Chatbot, Phân tích dữ liệu, Hình ảnh...).
-4.  **Chỉ số (Stats):** 5 con số ấn tượng về quy mô và uy tín của công ty.
-5.  **Sản phẩm nổi bật (Products):** Giới thiệu chi tiết các phần mềm AI (ShinChat, DataShin...).
-6.  **Lợi thế (Why Us):** 6 lý do khách hàng nên chọn NeuroShin.
-7.  **Bảng giá (Pricing):** 3 gói dịch vụ (Starter, Business, Enterprise).
-8.  **Đánh giá & Tin tức:** Ý kiến khách hàng và các bài báo, nghiên cứu mới nhất.
-9.  **Đăng ký & Chân trang (Footer):** Form nhận tin và thông tin liên hệ trụ sở tại Tokyo.
+1.  **Hero:** Background gradient xanh, ảnh máy tính lớn, dải logo đối tác (Marquee).
+2.  **AI Services:** 6 mảng công nghệ, biểu tượng đa màu sắc trên nền thẻ xanh nhạt.
+3.  **Stats:** Các con số thành tựu trên nền khối xanh đậm.
+4.  **Featured Products:** Giới thiệu sản phẩm (ShinChat, DataShin...), nút màu Cam.
+5.  **Advantages:** 6 lợi thế cạnh tranh với biểu tượng đa màu sắc.
+6.  **Pricing:** 3 gói cước linh hoạt, nổi bật gói Business.
+7.  **Testimonials:** Đánh giá khách hàng, sao vàng, avatar màu sắc thương hiệu.
+8.  **News:** Tin tức nghiên cứu và cập nhật công nghệ.
+9.  **Newsletter & Footer:** Đăng ký nhận tin và thông tin liên hệ, social icons màu gốc.
 
 ---
 
-## ✅ Yêu cầu cốt lõi
-*   **Logo đối tác:** Phải là logo thật, sắc nét (định dạng SVG).
-*   **Tương tác:** Chatbot phải phản hồi được các câu hỏi mẫu.
-*   **Di động:** Hiển thị đẹp trên cả điện thoại và máy tính.
+## ✅ Điểm nhấn trải nghiệm (UX)
+*   **Đồng bộ:** Tất cả các thẻ nội dung đều dùng chung màu nền xanh nhạt.
+*   **Nổi bật:** Sử dụng màu Cam cho các hành động quan trọng (CTA).
+*   **Sống động:** Hệ thống icon và avatar nhiều màu sắc giúp giao diện hiện đại.
+*   **Chuyên nghiệp:** Toàn bộ thuật ngữ và nội dung chuẩn tiếng Nhật doanh nghiệp.

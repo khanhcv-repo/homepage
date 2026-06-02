@@ -36,7 +36,7 @@ export default function Newsletter() {
 
           {/* Heading */}
           <div className="max-w-2xl mx-auto mb-8">
-            <span className="text-[11px] font-bold tracking-widest text-white bg-white/20 px-3.5 py-1.5 rounded-full uppercase font-mono mb-6 inline-block">
+            <span className="text-[11px] font-bold tracking-widest text-[#FF5A36] bg-white px-3.5 py-1.5 rounded-full uppercase font-mono mb-6 inline-block shadow-sm">
               週刊 AI インテリジェンス
             </span>
             <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-white tracking-tight leading-tight mb-4">

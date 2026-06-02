@@ -126,13 +126,13 @@ export default function Hero() {
         {/* Infinite Scroll Wrapper */}
         <div className="relative w-full flex overflow-x-hidden">
           {/* Track */}
-          <div className="animate-marquee flex gap-2 whitespace-nowrap min-w-full justify-start items-center">
+          <div className="animate-marquee flex gap-8 whitespace-nowrap min-w-full justify-start items-center">
             {[...CLIENT_LOGOS, ...CLIENT_LOGOS, ...CLIENT_LOGOS].map((logo, index) => (
               <div
                 key={index}
                 className="flex flex-col items-center gap-1 group cursor-default"
               >
-                <div className="w-30 h-22 flex items-center justify-center transition-all duration-500">
+                <div className="w-40 h-28 flex items-center justify-center transition-all duration-500">
                   <img 
                     src={logo.logoUrl} 
                     alt={`${logo.name} logo`}

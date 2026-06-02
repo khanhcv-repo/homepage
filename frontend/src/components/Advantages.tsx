@@ -45,7 +45,7 @@ export default function Advantages() {
             </p>
 
             {/* Micro visual graphic */}
-            <div className="p-6 rounded-3xl bg-[#E6F4F1] border border-[#25A69A]/20 flex items-center gap-4 shadow-sm">
+            <div className="p-6 rounded-3xl bg-[#dffbfb] border border-[#25A69A]/20 flex items-center gap-4 shadow-sm">
               <div className="p-3 bg-[#1F2937] rounded-2xl text-white shrink-0">
                 <ShieldAlert className="h-6 w-6 text-[#35AFA3]" />
               </div>
@@ -66,7 +66,7 @@ export default function Advantages() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: idx * 0.08 }}
-                  className="p-6 rounded-3xl bg-[#E6F4F1] border border-[#25A69A]/10 hover:border-[#35AFA3]/40 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group text-left shadow-sm"
+                  className="p-6 rounded-3xl bg-[#dffbfb] border border-[#25A69A]/10 hover:border-[#35AFA3]/40 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group text-left shadow-sm"
                   id={`adv-item-${idx}`}
                 >
                   <div>

@@ -175,7 +175,7 @@ export const IMPRESSIVE_STATS: StatItem[] = [
     icon: "Globe"
   },
   {
-    value: "アジア太平洋",
+    value: "Asia Pacific",
     label: "AI Innovation Award 2024",
     description: "最優秀AIイノベーション賞受賞",
     icon: "Award"

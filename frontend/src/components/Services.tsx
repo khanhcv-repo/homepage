@@ -55,7 +55,7 @@ export default function Services() {
             ];
 
             const theme = { 
-              bg: "bg-[#E6F4F1]", 
+              bg: "bg-[#dffbfb]", 
               icon: iconBgColors[idx % iconBgColors.length], 
               text: "text-white",
               border: "border-[#25A69A]/10" 
@@ -73,7 +73,7 @@ export default function Services() {
                 id={`service-card-${svc.id}`}
               >
                 {/* Backglow decoration */}
-                <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-[#E6F4F1]/20 group-hover:bg-[#E6F4F1]/40 transition-colors duration-300 pointer-events-none" />
+                <div className="absolute -top-12 -right-12 w-24 h-24 rounded-full bg-[#dffbfb]/20 group-hover:bg-[#dffbfb]/40 transition-colors duration-300 pointer-events-none" />
 
                 <div>
                   {/* Icon Circle */}

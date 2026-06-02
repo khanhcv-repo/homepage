@@ -45,7 +45,7 @@ export default function Testimonials() {
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="p-8 rounded-3xl bg-[#E6F4F1] shadow-sm border border-[#25A69A]/10 flex flex-col justify-between text-left relative group hover:shadow-2xl transition-all duration-300"
+                className="p-8 rounded-3xl bg-[#dffbfb] shadow-sm border border-[#25A69A]/10 flex flex-col justify-between text-left relative group hover:shadow-2xl transition-all duration-300"
                 id={`testimonial-card-${idx}`}
               >
                 {/* Quotes decoration */}

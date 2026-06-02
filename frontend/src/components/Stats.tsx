@@ -47,7 +47,7 @@ export default function Stats() {
             const isAward = idx === 4;
             const theme = isAward 
               ? { bg: "bg-[#FFF8E1]", icon: "bg-[#FFE082]", text: "text-[#F57F17]" } // Golden/Award theme
-              : { bg: "bg-[#E6F4F1]", icon: "bg-[#B2DFDB]", text: "text-[#00796B]" }; // Uniform Teal theme
+              : { bg: "bg-[#dffbfb]", icon: "bg-[#B2DFDB]", text: "text-[#00796B]" }; // Uniform Teal theme
             
             return (
               <motion.div

@@ -70,7 +70,7 @@ export default function Pricing() {
                 className={`relative rounded-3xl p-8 flex flex-col justify-between border transition-all duration-300 text-left ${
                   isPopular
                     ? "bg-[#25A69A] border-[#25A69A] shadow-2xl scale-105 z-10 text-white"
-                    : "bg-[#E6F4F1] border-[#25A69A]/10 shadow-sm text-slate-900"
+                    : "bg-[#dffbfb] border-[#25A69A]/10 shadow-sm text-slate-900"
                 }`}
                 id={`pricing-card-${idx}`}
               >

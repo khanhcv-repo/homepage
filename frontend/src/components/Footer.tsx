@@ -173,8 +173,8 @@ export default function Footer() {
         <div className="py-8 my-8 border-y border-white/10 grid grid-cols-1 md:grid-cols-3 gap-6 text-left" id="footer-branches-info">
           
           {/* Hotline */}
-          <div className="flex gap-3 items-center group">
-            <div className="p-3 bg-white/10 rounded-2xl text-white group-hover:bg-white group-hover:text-[#25A69A] transition-colors duration-300 shrink-0">
+          <div className="flex gap-3 items-center group cursor-default">
+            <div className="p-3 bg-[#FF5A36] rounded-2xl text-white transition-all duration-300 shrink-0 shadow-lg shadow-[#FF5A36]/20 group-hover:-translate-y-1">
               <Phone className="h-5 w-5" />
             </div>
             <div className="flex flex-col">
@@ -189,8 +189,8 @@ export default function Footer() {
           </div>
 
           {/* Email */}
-          <div className="flex gap-3 items-center group">
-            <div className="p-3 bg-white/10 rounded-2xl text-white group-hover:bg-white group-hover:text-[#25A69A] transition-colors duration-300 shrink-0">
+          <div className="flex gap-3 items-center group cursor-default">
+            <div className="p-3 bg-[#3B82F6] rounded-2xl text-white transition-all duration-300 shrink-0 shadow-lg shadow-[#3B82F6]/20 group-hover:-translate-y-1">
               <Mail className="h-5 w-5" />
             </div>
             <div className="flex flex-col">
@@ -205,8 +205,8 @@ export default function Footer() {
           </div>
 
           {/* Location / Address */}
-          <div className="flex gap-3 items-start group">
-            <div className="p-3 bg-white/10 rounded-2xl text-white group-hover:bg-white group-hover:text-[#25A69A] transition-colors duration-300 shrink-0">
+          <div className="flex gap-3 items-start group cursor-default">
+            <div className="p-3 bg-[#8B5CF6] rounded-2xl text-white transition-all duration-300 shrink-0 shadow-lg shadow-[#8B5CF6]/20 group-hover:-translate-y-1">
               <MapPin className="h-5 w-5" />
             </div>
             <div className="flex flex-col">

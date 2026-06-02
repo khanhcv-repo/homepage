@@ -1,7 +1,7 @@
 
 # Báo cáo Kiểm thử Frontend (NeuroShin AI)
 
-- **Thời gian:** 6/2/2026, 11:28:40 AM
+- **Thời gian:** 6/2/2026, 1:22:56 PM
 - **Trạng thái:** ✅ PASS
 - **Kết quả:** 39 Passed, 0 Failed
 
@@ -17,8 +17,8 @@
 
  Test Files  11 passed (11)
       Tests  39 passed (39)
-   Start at  11:28:31
-   Duration  9.23s (transform 907ms, setup 3.28s, import 30.81s, tests 5.53s, environment 27.17s)
+   Start at  13:22:46
+   Duration  9.59s (transform 1.24s, setup 2.62s, import 32.26s, tests 6.04s, environment 29.19s)
 
 
 ```

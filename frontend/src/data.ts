@@ -1,3 +1,12 @@
+import rakutenLogo from './assets/rakuten.png';
+import nttdataLogo from './assets/nttdata.png';
+import mercariLogo from './assets/mercari.png';
+import suntoryLogo from './assets/suntory.png';
+import lineLogo from './assets/line.png';
+import docomoLogo from './assets/docomo.png';
+import moneyForwardLogo from './assets/money_forrward.png';
+import yahooLogo from './assets/yahoo.png';
+
 export interface AIService {
   id: string;
   title: string;
@@ -266,49 +275,49 @@ export const CLIENT_LOGOS = [
   { 
     name: "Rakuten", 
     industry: "E-Commerce", 
-    logoUrl: "/rakuten.png",
+    logoUrl: rakutenLogo,
     domain: "rakuten.co.jp"
   },
   { 
     name: "NTT DATA", 
     industry: "Systems Integration", 
-    logoUrl: "/nttdata.png",
+    logoUrl: nttdataLogo,
     domain: "nttdata.com"
   },
   { 
     name: "mercari", 
     industry: "Marketplace", 
-    logoUrl: "/mercari.png",
+    logoUrl: mercariLogo,
     domain: "mercari.com"
   },
   { 
     name: "SUNTORY", 
     industry: "Beverages", 
-    logoUrl: "/suntory.png",
+    logoUrl: suntoryLogo,
     domain: "suntory.co.jp"
   },
   { 
     name: "LINE", 
     industry: "Messaging", 
-    logoUrl: "/line.png",
+    logoUrl: lineLogo,
     domain: "line.me"
   },
   { 
     name: "docomo", 
     industry: "Telecommunications", 
-    logoUrl: "/docomo.png",
+    logoUrl: docomoLogo,
     domain: "nttdocomo.co.jp"
   },
   { 
     name: "Money Forward", 
     industry: "Fintech", 
-    logoUrl: "/money_forrward.png",
+    logoUrl: moneyForwardLogo,
     domain: "moneyforward.com"
   },
   { 
     name: "YAHOO! JAPAN", 
     industry: "Internet Services", 
-    logoUrl: "/yahoo.png",
+    logoUrl: yahooLogo,
     domain: "yahoo.co.jp"
   }
 ];

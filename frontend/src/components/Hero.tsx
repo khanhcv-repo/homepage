@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { COMPANY_NAME, SLOGAN, CORE_DOMAIN, CLIENT_LOGOS } from "../data";
 import { ArrowRight, Check } from "lucide-react";
+import heroImage from "../assets/maytinh3.png";
 
 export default function Hero() {
   return (
@@ -99,7 +100,7 @@ export default function Hero() {
               
               <div className="relative w-full max-w-5xl">
                 <img 
-                  src="/maytinh3.png" 
+                  src={heroImage} 
                   alt="NeuroShin AI プラットフォーム" 
                   className="w-full h-auto object-contain relative z-10"
                   style={{

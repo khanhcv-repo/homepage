@@ -4,14 +4,6 @@ Tài liệu rút gọn về các thông số và cấu trúc UI hiện tại.
 
 ---
 
-## 🎨 Thông số thiết kế chính
-*   **Màu chủ đạo:** Xanh Teal (`#25A69A`).
-*   **Màu điểm nhấn (Nút/Tag):** Cam rực rỡ (`#FF5A36`).
-*   **Màu nền thẻ (Cards):** Xanh nhạt (`#dffbfb`).
-*   **Ngôn ngữ:** Tiếng Nhật 100%.
-
----
-
 ## 🏗️ Cấu trúc Trang chủ (9 Phần)
 
 1.  **Hero:** Background gradient xanh, ảnh máy tính lớn, dải logo đối tác (Marquee).

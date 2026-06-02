@@ -70,11 +70,9 @@ Kỹ năng này chứa toàn bộ "linh hồn" văn bản của trang chủ. Age
 - **Copyright**: `© 2026 NeuroShin AI Inc. All rights reserved.`
 
 ## 🛠️ Quy tắc Kỹ thuật
-- Sử dụng màu `#E85D22` (Terracotta Orange) cho CTA.
-- Sử dụng palette màu "Sand & Terracotta":
-  - Background Hero/Navbar/Stats/Footer: `#D5B895`
-  - Background Main Sections: `#F9F6F0`
-  - Text: `#2A2A2A`
-  - Cards: `#F9F2E8` (phụ) / `#E8D5C4` (chính)
-- Sử dụng `framer-motion` cho mọi hiệu ứng xuất hiện.
-- Đảm bảo tính Responsive tuyệt đối (Mobile/Desktop).
+- **Quản lý Asset**:
+  - Tất cả các file hình ảnh `.png` phải được đặt trong thư mục `frontend/src/assets`.
+  - Phải `import` ảnh trực tiếp trong React component (ví dụ: `import heroImage from '../assets/hero.png'`) để Vite xử lý bundle chính xác.
+- **Hiệu ứng & Responsive**:
+  - Sử dụng `motion/react` (Framer Motion) cho mọi hiệu ứng xuất hiện (`initial`, `whileInView`, `animate`).
+  - Đảm bảo tính Responsive tuyệt đối (Mobile/Desktop) sử dụng Tailwind CSS utilities.

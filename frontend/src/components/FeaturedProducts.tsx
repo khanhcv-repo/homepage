@@ -83,7 +83,7 @@ export default function FeaturedProducts() {
                 {isFirst && (
                   <div className="absolute top-0 right-0">
                     <div className="bg-[#FF5A36] text-white text-[10px] font-black py-1 px-10 transform rotate-45 translate-x-10 translate-y-3 shadow-md">
-                      BEST VALUE
+                      最もお得
                     </div>
                   </div>
                 )}

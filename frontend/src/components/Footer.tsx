@@ -10,7 +10,7 @@ export default function Footer() {
     { name: "DataShin Analytics", href: "#products" },
     { name: "ShinVision", href: "#products" },
     { name: "ContentShin Studio", href: "#products" },
-    { name: "API Marketplace", href: "#products" },
+    { name: "API マーケットプレイス", href: "#products" },
   ];
 
   const companyLinks = [
@@ -71,7 +71,7 @@ export default function Footer() {
               {SLOGAN}
             </p>
             <p className="text-xs text-white/70 leading-relaxed font-sans mb-6 max-w-sm">
-              NeuroShin AI は、アジアを代表する最先端のAIソリューション te を tạo raし、企業のプロセス自動化の飛躍と、最高峰 của 顧客体験の構築を支援します。
+              NeuroShin AI は、アジアを代表する最先端のAIソリューションを創造し、企業のプロセス自動化の飛躍と、最高峰の顧客体験の構築を支援します。
             </p>
 
             {/* Social icons */}
@@ -183,7 +183,7 @@ export default function Footer() {
                 0120-888-999
               </a>
               <span className="text-[10px] text-white/60 tracking-tight leading-normal mt-0.5">
-                9:00 – 18:00 JST | 月曜日 – 金曜日
+                9:00 – 18:00 日本標準時 | 月曜日 – 金曜日
               </span>
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function Footer() {
                 hello@neuroshin-ai.co.jp
               </a>
               <span className="text-[10px] text-white/60 tracking-tight leading-normal mt-0.5">
-                JST 2営業時間以内に返信いたします
+                2営業時間以内に返信いたします
               </span>
             </div>
           </div>
@@ -222,13 +222,13 @@ export default function Footer() {
         {/* Copyright notice row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 pt-4 border-t border-white/10 text-xs text-white/50" id="footer-bottom-copyright">
           <p className="font-sans font-medium text-white/70">
-            © 2025-{currentYear} <strong className="text-white">NeuroShin AI KK</strong>. All rights reserved.
+            © 2025-{currentYear} <strong className="text-white">NeuroShin AI 株式会社</strong>. 全著作権所有.
           </p>
           <div className="flex gap-4 font-mono text-[10px]" id="powered-credits">
-            <span>Built in Tokyo & Hanoi</span>
+            <span>東京とハノイで開発</span>
             <span>|</span>
             <span className="flex items-center gap-0.5">
-              Powered by <span className="font-extrabold text-white tracking-tight">NeuroShin JaLLM v2.0</span>
+              提供： <span className="font-extrabold text-white tracking-tight">NeuroShin JaLLM v2.0</span>
             </span>
           </div>
         </div>

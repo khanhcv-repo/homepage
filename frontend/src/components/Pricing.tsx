@@ -19,7 +19,7 @@ export default function Pricing() {
             柔軟なライセンス
           </span>
           <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-[#1F2937] tracking-tight mb-4">
-            売上を飛躍させるパートナーシップ料金プラン
+            売上 te 飛躍させるパートナーシップ料金プラン
           </h2>
           <div className="w-16 h-1 bg-[#35AFA3] mx-auto mb-6 rounded-full" />
           <p className="text-base text-slate-600 font-sans">
@@ -78,7 +78,7 @@ export default function Pricing() {
                 {isPopular && (
                   <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#FF5A36] text-white px-4 py-1 rounded-full text-[10px] font-extrabold tracking-widest uppercase shadow-md flex items-center gap-1">
                     <CheckCircle2 className="h-3 w-3" />
-                    MOST POPULAR
+                    最も人気
                   </span>
                 )}
 
@@ -145,7 +145,7 @@ export default function Pricing() {
                         カスタムリクエスト
                       </a>
                     ) : (
-                      <span className="opacity-50">SLA 24h</span>
+                      <span className="opacity-50">SLA 24時間保証</span>
                     )}
                   </div>
                 </div>

@@ -88,7 +88,7 @@ export default function Hero() {
           {/* Hero Image Right (Cols: 6/12) */}
           <motion.div
             initial={{ opacity: 0, x: 30, scale: 1, y: 0 }}
-            animate={{ opacity: 1, x: 0, scale: 1.45, y: 85 }}
+            animate={{ opacity: 1, x: 0, scale: 1.45, y: 40 }}
             transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
             className="w-full flex justify-center items-center relative z-0"
             id="hero-image"
@@ -100,7 +100,7 @@ export default function Hero() {
               <div className="relative w-full max-w-5xl">
                 <img 
                   src="/maytinh3.png" 
-                  alt="NeuroShin AI Platform" 
+                  alt="NeuroShin AI プラットフォーム" 
                   className="w-full h-auto object-contain relative z-10"
                   style={{
                     maskImage: "radial-gradient(ellipse 85% 85% at 50% 50%, black 50%, transparent 95%)",

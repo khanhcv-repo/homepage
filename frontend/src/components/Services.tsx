@@ -95,7 +95,7 @@ export default function Services() {
                 {/* Readmore / Link with Highlight text */}
                 <div className="flex items-center justify-between pt-4 border-t border-black/5 mt-auto">
                   <span className="text-[11px] font-mono tracking-wider text-slate-400 font-semibold uppercase">
-                    NeuroShin Tech
+                    NeuroShin テクノロジー
                   </span>
                   <span className={`text-xs font-semibold flex items-center gap-1 transition-colors duration-200 cursor-pointer ${theme.text}`}>
                     さらに詳しく

@@ -68,7 +68,7 @@ Kỹ năng này định nghĩa cấu trúc chuẩn và toàn bộ nội dung vă
 - **Logic**: Discount 20% khi bật `年払い`.
 
 ### 2.8 Testimonials (お客様の声)
-- **Authors**: `Yamamoto Kenji` (Rakuten), `Tanaka Yuki` (COO, SoftBank), `Nakamura Hiroshi` (CEO, FinLink).
+- **Authors**: `Yamamoto Kenji` (CTO, Rakuten), `Tanaka Yuki` (COO, SoftBank), `Nakamura Hiroshi` (CEO, FinLink).
 
 ### 2.9 News (研究・ニュースセンター)
 - **Latest**: `NeuroShin AI、日本語に最適化された大規模言語モデル「JaLLM 2.0」を正式リリース。`

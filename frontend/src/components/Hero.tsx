@@ -101,15 +101,15 @@ export default function Hero() {
                 <img 
                   src="/maytinh3.png" 
                   alt="NeuroShin AI Platform" 
-                  className="w-full h-auto object-contain mix-blend-multiply relative z-10"
+                  className="w-full h-auto object-contain relative z-10"
                   style={{
-                    maskImage: "radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 85%)",
-                    WebkitMaskImage: "radial-gradient(ellipse 70% 70% at 50% 50%, black 30%, transparent 85%)",
-                    filter: "brightness(1.08) contrast(1.05)"
+                    maskImage: "radial-gradient(ellipse 85% 85% at 50% 50%, black 50%, transparent 95%)",
+                    WebkitMaskImage: "radial-gradient(ellipse 85% 85% at 50% 50%, black 50%, transparent 95%)",
+                    filter: "brightness(1.05) contrast(1.02)"
                   }}
                 />
                 {/* Subtle gradient overlay directly on the image area */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-[#B2DFDB]/15 mix-blend-multiply pointer-events-none z-20 rounded-3xl opacity-40" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-[#B2DFDB]/5 via-transparent to-[#B2DFDB]/10 pointer-events-none z-20 rounded-3xl opacity-30" />
               </div>
             </div>
           </motion.div>

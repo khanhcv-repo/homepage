@@ -63,11 +63,39 @@ Kỹ năng này chứa toàn bộ "linh hồn" văn bản của trang chủ. Age
 - **Business** (¥26,400/月): Doanh nghiệp đang phát triển (*Phổ biến nhất*).
 - **Enterprise** (お問い合わせ): Tập đoàn lớn, hỗ trợ On-premise.
 
-## 8. Footer & Newsletter
-- **Newsletter Title**: `最新のAIトレンドを購読する`
-- **Newsletter Desc**: `NeuroShin AIから、革新的な技術アップデートと業界レポートを定期的にお届けします。`
-- **Address**: `東京都千代田区大手町`
-- **Copyright**: `© 2026 NeuroShin AI Inc. All rights reserved.`
+## 8. Footer & Newsletter (Chi tiết Hệ thống)
+
+### A. Newsletter & Contact Section
+- **Badge/Label**: `週刊 AI インテリジェンス`
+- **Main Heading**: `毎週のAIトレンドアップデート – 完全無料`
+- **Description**: `毎週、25,000人以上のテクノロジーリーダーが NeuroShin AI ニュースレターを読んでいます。インサイト、実際のケーススタディ、限定特典をメールボックスに trực tiếp お届けします。`
+- **Form UI**:
+  - Placeholder: `ビジネスメールアドレスを入力してください...`
+  - Submit Button: `無料で登録する`
+  - Loading State: `登録中...`
+- **Success State**:
+  - Heading: `登録が完了しました！`
+  - Message: `NeuroShin AI エリートコミュニティへようこそ。最初の分析レポートは来週の月曜日にメールボックスに届きます。`
+  - Link: `別のメールアドレスを登録する`
+- **Styling**: Gradient background `from-[#25A69A] to-[#35AFA3]`, Button `#FF5A36`.
+
+### B. Corporate Footer
+- **Branding**: `NeuroShin AI` | Badge: `日本テクノロジー`
+- **Company Intro**: `NeuroShin AI は、アジアを代表する最先端 của AIソリューションを創造し、企業のプロセス自動化の飛躍と、最高峰の顧客体験の構築を支援します。`
+- **Links Grid**:
+  - **製品**: `ShinChat Pro`, `DataShin Analytics`, `ShinVision`, `ContentShin Studio`, `API マーケットプレイス`
+  - **会社**: `NeuroShin AI について`, `創設チーム`, `パートナー採用`, `プレス＆メディア`, `直接お問い合わせ`
+  - **リソース**: `技術APIドキュメント`, `共有ブログ`, `実際のケーススタディ`, `詳細ウェビナー`, `開発者コミュニティ`
+  - **法的情報**: `プライバシーポリシー`, `利用規約`, `クッキーポリシー`, `APPI準拠`
+- **Social Connect**: LinkedIn, Facebook, YouTube, Twitter, GitHub (Hiệu ứng hover đổi màu thương hiệu).
+- **Contact Information (3 Columns)**:
+  - **Hotline**: `0120-888-999` (9:00 – 18:00 | 月曜日 – 金曜日)
+  - **Email**: `hello@neuroshin-ai.co.jp` (2営業時間以内に返信)
+  - **Address**: `〒100-0005 東京都千代田区丸の内1丁目9番2号 グラントウキョウサウスタワー 18F`
+- **Bottom Copyright**:
+  - Text: `© 2025-2026 NeuroShin AI 株式会社. 全著作権所有.`
+  - Credits: `東京とハノイで開発 | 提供： NeuroShin JaLLM v2.0`
+
 
 ## 🛠️ Quy tắc Kỹ thuật
 - **Quản lý Asset**:
